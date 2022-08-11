@@ -6,12 +6,13 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Partners from "./components/Partners";
+import Catalogue from "./components/Catalogue";
 
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
-            <div className="mt-[126px]">
+            <div className="mt-[73px] md:mt-[145px]">
                 <Routes>
                     <Route
                         exact
@@ -26,7 +27,8 @@ function App() {
                             </>
                         }
                     />
-                    <Route path="/about-us/" element={<Hero />} />
+                    <Route path="/about-us/" element={<About />} />
+                    <Route path="/catalogue/" element={<Catalogue />} />
                 </Routes>
                 <Footer />
             </div>

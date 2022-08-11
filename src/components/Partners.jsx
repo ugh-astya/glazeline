@@ -7,18 +7,38 @@ import partner5 from "../assets/partner5.png";
 
 const Partners = () => {
     return (
-        <section className="body-font">
-            <div className="max-w-7xl px-5 py-16 mx-auto">
-                <div className="mb-16">
-                    <h1 className="text-4xl font-medium font-hero text-gray-900 text-center mb-12 uppercase">
+        <section className="fade-in body-font">
+            <div className="max-w-7xl px-2 md:px-4 py-16 mx-auto">
+                <div className="md:mb-16">
+                    <h1 className="text-2xl md:text-3xl xl:text-4xl font-medium font-hero text-gray-900 text-center mb-12 uppercase">
                         Our Partners
                     </h1>
-                    <div className="max-w-5xl mx-auto flex flex-wrap gap-8 justify-center items-center">
-                        <img src={partner1} alt="" />
-                        <img src={partner2} alt="" />
-                        <img src={partner3} alt="" />
-                        <img src={partner4} alt="" />
-                        <img src={partner5} alt="" />
+                    <div className="w-full md:max-w-5xl mx-auto flex flex-wrap md:gap-8 gap-4 justify-center items-center">
+                        <img
+                            src={partner1}
+                            alt=""
+                            className="md:w-auto w-2/5"
+                        />
+                        <img
+                            src={partner2}
+                            alt=""
+                            className="md:w-auto w-2/5"
+                        />
+                        <img
+                            src={partner3}
+                            alt=""
+                            className="md:w-auto w-2/5"
+                        />
+                        <img
+                            src={partner4}
+                            alt=""
+                            className="md:w-auto w-2/5"
+                        />
+                        <img
+                            src={partner5}
+                            alt=""
+                            className="md:w-auto w-2/5"
+                        />
                     </div>
                 </div>
             </div>

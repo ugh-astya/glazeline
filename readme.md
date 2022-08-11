@@ -1,14 +1,3 @@
-## todo
-- about page
-- catalog page
-- 3 block for services - mobile one
-- futura font
-- gallery horizontal scroll
-- remove teams 
-- add testimonials
-- remove 2nd part in home page
-- contact page - sendinblue
+## Glazeline Tiles and Ceramic Studio
 
-
-- logo with no tiles and underline (svg)
-- 
+Currently deployed in Netlify in the free plan. It can be viewed from [here](https://fancy-sunshine-e4d49b.netlify.app/).
