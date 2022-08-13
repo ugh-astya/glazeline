@@ -6,9 +6,9 @@ const Contact = () => {
             id="contact-us"
             className="fade-in body-font relative bg-gray-200"
         >
-            <div className="max-w-7xl px-2 md:px-4 py-8 md:py-16 mx-auto">
+            <div className="max-w-7xl px-2 md:px-4 py-8 md:py-32 mx-auto">
                 <div className="md:mb-16 mb-8">
-                    <h1 className="text-2xl md:text-3xl xl:text-4xl font-medium font-hero text-gray-900 text-center mb-2 md:mb-4 uppercase">
+                    <h1 className="text-2xl md:text-3xl xl:text-6xl font-medium font-vogue tracking-[0.12em] text-gray-900 text-center mb-2 md:mb-4 uppercase">
                         Have Questions?
                     </h1>
                     <p className="text-center text-lg md:text-xl ">
@@ -66,7 +66,7 @@ const Contact = () => {
                             <h2 className="text-2xl  text-gray-900 text-center mb-1">
                                 Get in Touch
                             </h2>
-                            <p className="text-sm  text-center mb-8">
+                            <p className="text-sm text-center mb-8">
                                 We are more than happy to help you!
                             </p>
                             {/* name */}

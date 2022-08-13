@@ -7,7 +7,7 @@ import abt4 from "../assets/about4.png";
 const About = () => {
     return (
         <section className="fade-in body-font boxShadow">
-            <div className="max-w-7xl px-2 md:px-4 mx-auto py-16 md:py-20">
+            <div className="max-w-7xl px-2 md:px-4 mx-auto py-16 md:py-36">
                 <div className="mb-12 md:mb-20 text-center max-w-3xl mx-auto">
                     <p className="text-lg md:text-xl mb-6">
                         From wall tiles to commercial space design, from wood
@@ -16,17 +16,17 @@ const About = () => {
                     <p className=" text-lg md:text-xl mb-3">
                         Visit us at Bhopal to go through
                     </p>
-                    <h2 className="uppercase text-2xl md:text-3xl xl:text-4xl font-medium font-hero">
+                    <h2 className="uppercase text-2xl md:text-3xl xl:text-6xl pt-4 font-medium font-vogue tracking-[0.12em]">
                         Our Collection
                     </h2>
                 </div>
                 {/* collection 1 */}
-                <div className="flex flex-col md:flex-row gap-8 items-center mb-16">
-                    <div className="w-full md:w-1/2 overflow-hidden sm:mt-0 backCol2 flex justify-start shadow-2xl">
-                        <img src={abt1} alt="" width="100%" />
+                <div className="flex flex-col md:flex-row gap-16 items-center mb-16">
+                    <div className="w-full md:w-1/2 overflow-hidden sm:mt-0 backCol2 flex justify-end">
+                        <img src={abt1} alt="" width="75%" />
                     </div>
                     <div className="mt-auto mb-auto w-full md:w-1/2">
-                        <h1 className=" uppercase font-medium text-2xl md:text-3xl mb-2">
+                        <h1 className="uppercase font-semibold text-2xl md:text-3xl mb-2 tracking-widest">
                             Wall Tiles
                         </h1>
                         <p className="mt-3 text-lg md:text-xl  mb-4">
@@ -37,33 +37,33 @@ const About = () => {
                             to choose from, there's something to choose for
                             everyone.
                         </p>
-                        <button className="md:float-right text-lg md:text-xl  uppercase bg-black text-white px-5 py-1">
+                        <button className="md:float-right text-lg md:text-xl uppercase bg-black text-white px-5 py-1">
                             Explore <i className="bi bi-chevron-right"></i>
                         </button>
                     </div>
                 </div>
                 {/* collection 2 */}
-                <div className="flex flex-col md:flex-row-reverse gap-8 items-center mb-16">
-                    <div className="w-full md:w-1/2 overflow-hidden sm:mt-0 backCol2 flex justify-start shadow-2xl">
-                        <img src={abt2} alt="" width="100%" />
+                <div className="flex flex-col md:flex-row-reverse gap-16 items-center mb-16">
+                    <div className="w-full md:w-1/2 overflow-hidden sm:mt-0 backCol2 flex justify-start">
+                        <img src={abt2} alt="" width="75%" />
                     </div>
                     <div className="mt-auto mb-auto w-full md:w-1/2 text-left md:text-right">
                         <h1 className=" uppercase font-medium text-2xl md:text-3xl mb-2">
                             Wood Flooring
                         </h1>
-                        <p className="mt-3 text-lg md:text-xl  mb-4">
+                        <p className="mt-3 text-lg md:text-xl mb-4">
                             Return to nature with high quality wood to a classic
                             rustic finish wood flooring. Built for all seasons,
                             our wood flooring is durable and scratch-proof. With
                             a variety of colors, no two floors will be the same.
                         </p>
-                        <button className="text-lg md:text-xl  uppercase bg-black text-white px-5 py-1">
+                        <button className="text-lg md:text-xl uppercase bg-black text-white px-5 py-1">
                             Explore <i className="bi bi-chevron-right"></i>
                         </button>
                     </div>
                 </div>
                 {/* collection 3 */}
-                <div className="flex flex-col md:flex-row gap-8 items-center mb-16">
+                <div className="flex flex-col md:flex-row gap-16 items-center mb-16">
                     <div className="w-full md:w-1/2 overflow-hidden sm:mt-0 backCol2 flex justify-start shadow-2xl">
                         <img src={abt3} alt="" width="100%" />
                     </div>

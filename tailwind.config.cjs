@@ -5,12 +5,14 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: [
+                "louis",
                 "'IBM Plex Sans'",
                 "sans-serif",
                 "ui-sans-serif",
                 "system-ui",
             ],
-            hero: ["Vidaloka", "serif"],
+            hero: ["andine", "serif"],
+            vogue: ["vogue", "serif"],
         },
         extend: {},
     },

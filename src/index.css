@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 /* general css */
+/* custom font */
+@font-face {
+    font-family: andine;
+    src: url(./src/assets/andine/Andine.woff);
+  }
+@font-face {
+    font-family: louis;
+    src: url(./src/assets/louis_george_caf/louis.ttf);
+  }
+@font-face {
+    font-family: vogue;
+    src: url(./src/assets/vogue/Vogue.ttf);
+  }
 body {
     box-sizing: border-box;
     /* width: 100%;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import logo1 from "../assets/logo1.png";
 
 const Navbar = () => {
     function showNav() {
@@ -41,7 +42,7 @@ const Navbar = () => {
                     to="/"
                     className="flex title-font font-medium items-center mb-0.5"
                 >
-                    <img src={logo} alt="GlazeLine" width={380} />
+                    <img src={logo} alt="GlazeLine" width={450} />
                 </Link>
                 <div className="flex">
                     <nav className="md:ml-auto flex flex-wrap items-center  font-medium">
@@ -75,7 +76,7 @@ const Navbar = () => {
             {/* on scroll navbar */}
             <div
                 id="nav2"
-                className="md:hidden fixed w-full z-50 bg-black body-font text-white"
+                className="md:hidden w-full z-50 bg-black body-font text-white"
             >
                 <div className="fade-in justify-between px-0 md:px-4 flex flex-wrap pt-2 md:py-4 pb-0 flex-col md:flex-row">
                     <div
@@ -84,9 +85,9 @@ const Navbar = () => {
                     >
                         <Link to="/" className="flex items-center">
                             <img
-                                src={logo}
+                                src={logo1}
                                 alt="Glazeline"
-                                width={240}
+                                width={400}
                                 className="mr-1"
                             />
                         </Link>

@@ -9,15 +9,15 @@ import "swiper/css/navigation";
 const Gallery = () => {
     return (
         <section className="fade-in body-font">
-            <div className="max-w-7xl px-2 md:px-4 md:py-16 pt-16 mx-auto">
+            <div className="max-w-7xl px-2 md:px-4 md:py-32 pt-16 mx-auto">
                 <div className="mb-8">
-                    <h1 className="text-2xl md:text-3xl xl:text-4xl font-medium font-hero text-gray-900 text-center uppercase">
+                    <h1 className="text-2xl md:text-3xl xl:text-6xl font-medium font-vogue tracking-[0.12em] text-gray-900 text-center uppercase">
                         Gallery
                     </h1>
                 </div>
                 <Swiper
                     slidesPerView={
-                        document.documentElement.scrollWidth > 767.99 ? 2 : 1
+                        document.documentElement.scrollWidth > 767.99 ? 3 : 1
                     }
                     spaceBetween={10}
                     pagination={{
