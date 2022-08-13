@@ -6,15 +6,15 @@
 /* custom font */
 @font-face {
     font-family: andine;
-    src: url(./src/assets/andine/Andine.woff);
+    src: url(/andine/Andine.woff);
   }
 @font-face {
     font-family: louis;
-    src: url(./src/assets/louis_george_caf/louis.ttf);
+    src: url(/louis_george_caf/louis.ttf);
   }
 @font-face {
     font-family: vogue;
-    src: url(./src/assets/vogue/Vogue.ttf);
+    src: url(/vogue/Vogue.ttf);
   }
 body {
     box-sizing: border-box;
