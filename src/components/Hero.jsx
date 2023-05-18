@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="w-full md:w-1/2 shadow-2xl">
                     <img src={hero1} alt="" width="100%" />
                 </div>
-                <div className="w-full md:w-1/2 flex-col flex justify-center md:px-8 py-4 md:py-0">
+                <div className="w-full md:w-1/2 flex-col flex justify-center md:pl-4 md:pr-16 py-4 md:py-0">
                     <h1 className="font-hero text-2xl md:text-3xl xl:text-4xl font-medium mb-4 md:text-right text-center leading-8">
                         The best rooms have something
                         <br />
@@ -22,8 +22,8 @@ const Hero = () => {
                 </div>
             </div>
             {/* second hero */}
-            <div className="flex md:flex-row-reverse flex-col items-center">
-                <div className="w-full md:w-1/2 shadow-2xl">
+            <div className="flex md:flex-row-reverse flex-col items-center shadow-xl">
+                <div className="w-full md:w-1/2">
                     <img src={hero2} alt="" width="100%" />
                 </div>
                 <div className="w-full md:w-1/2 flex-col flex justify-center md:px-8 py-4 md:py-0">

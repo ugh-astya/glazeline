@@ -12,7 +12,7 @@ function App() {
     return (
         <BrowserRouter>
             <Navbar />
-            <div className="mt-[73px] md:mt-[145px]">
+            <div className="mt-[91px] md:mt-[137px]">
                 <Routes>
                     <Route
                         exact

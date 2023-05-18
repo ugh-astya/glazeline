@@ -7,15 +7,15 @@
 @font-face {
     font-family: andine;
     src: url(/andine/Andine.woff);
-  }
+}
 @font-face {
     font-family: louis;
     src: url(/louis_george_caf/louis.ttf);
-  }
+}
 @font-face {
     font-family: vogue;
     src: url(/vogue/Vogue.ttf);
-  }
+}
 body {
     box-sizing: border-box;
     /* width: 100%;
