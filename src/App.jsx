@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Partners from "./components/Partners";
 import Catalogue from "./components/Catalogue";
 import Introduction from "./components/Introduction";
+import About from "./components/About";
 
 function App() {
     return (
@@ -25,12 +26,12 @@ function App() {
                                 <Collection />
                                 <Gallery />
                                 <Partners />
-                                <Contact /> 
+                                <Contact />
                             </div>
                         }
                     />
-                    <Route path="/about-us/" element={<Collection />} />
-                    <Route path="/catalogue/" element={<Catalogue />} />
+                    <Route exact path="/about-us/" element={<About />} />
+                    <Route exact path="/catalogue/" element={<Catalogue />} />
                 </Routes>
                 <Footer />
             </div>

@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import abt1 from "../assets/about.png";
-import abt2 from "../assets/about2.png";
-import abt3 from "../assets/about3.png";
-import abt4 from "../assets/about4.png";
+import abt1 from "../assets/old/2.png";
+import abt2 from "../assets/old/3.png";
+import abt3 from "../assets/old/5.jpg";
+import abt4 from "../assets/old/6.jpg";
 import CollectionItem from "./CollectionItem";
 
 const Collection = () => {
