@@ -19,14 +19,14 @@ function App() {
                         exact
                         path="/"
                         element={
-                            <>
+                            <div className="snap snap-y snap-mandatory">
                                 <Hero />
                                 <Introduction />
                                 <Collection />
                                 <Gallery />
                                 <Partners />
                                 <Contact /> 
-                            </>
+                            </div>
                         }
                     />
                     <Route path="/about-us/" element={<Collection />} />

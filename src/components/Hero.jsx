@@ -11,7 +11,7 @@ const Hero = () => {
                 <img
                     src={hero1}
                     alt="Home Interior"
-                    className="w-1/2 h-[calc(50vh-34px)] object-cover object-bottom"
+                    className="w-1/2 h-[calc(50vh-32.5px)] object-cover object-bottom"
                 />
                 <div className="w-1/2 flex flex-col justify-center pl-4 pr-12">
                     <h1 className="font-hero text-2xl md:text-3xl font-medium mb-4 md:text-right text-center">
@@ -39,7 +39,7 @@ const Hero = () => {
                 <img
                     src={hero2}
                     alt="Home Interior"
-                    className="w-1/2 h-[calc(50vh-34px)] object-cover object-bottom"
+                    className="w-1/2 h-[calc(50vh-32.5px)] object-cover object-bottom"
                 />
             </div>
         </section>
