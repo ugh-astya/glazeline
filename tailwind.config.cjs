@@ -13,6 +13,8 @@ module.exports = {
             ],
             hero: ["andine", "serif"],
             vogue: ["vogue", "serif"],
+            roboto: ["Roboto", "sans-serif"],
+            inter: ["Inter", "sans-serif"],
         },
         extend: {},
     },

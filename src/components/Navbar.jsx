@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
-import logo1 from "../assets/logo1.png";
+import logo from "../assets/glazeline_logo.svg";
 
 const Navbar = () => {
     function showNav() {
@@ -15,9 +14,9 @@ const Navbar = () => {
             eleme2.classList.remove("border-b-2");
         }
     }
-    window.onscroll = function () {
-        scrollFunction();
-    };
+    // window.onscroll = function () {
+    //     scrollFunction();
+    // };
 
     function scrollFunction() {
         if (
@@ -33,106 +32,40 @@ const Navbar = () => {
         }
     }
     return (
-        <header className="body-font text-white bg-black fixed w-full top-0 z-50">
-            <div
-                id="nav1"
-                className="hidden fade-in max-w-7xl mx-auto md:flex flex-col pb-3 items-center justify-center"
-            >
-                <Link
-                    to="/"
-                    className="flex title-font font-medium items-center mb-0.5"
-                >
-                    <img src={logo} alt="GlazeLine" width={380} />
+        <header className="text-white bg-black sticky top-0 z-50 px-2 md:px-4 py-3">
+            <div className="flex items-center justify-between">
+                <Link to="/">
+                    <img
+                        src={logo}
+                        alt="Glazeline"
+                        width={260}
+                        // className="invert"
+                    />
                 </Link>
-                <div className="flex">
-                    <nav className="text-lg md:ml-auto flex flex-wrap items-center font-medium gap-32">
-                        <Link
-                            to="/"
-                            className="border-b-2 border-black hover:border-white pb-0.5"
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            to="/catalogue/"
-                            className="border-b-2 border-black hover:border-white pb-0.5"
-                        >
-                            Catalogue
-                        </Link>
-                        <Link
-                            to="/about-us/"
-                            className="border-b-2 border-black hover:border-white pb-0.5"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            to="#contact-us"
-                            className="border-b-2 border-black hover:border-white pb-0.5"
-                        >
-                            Contact Us
-                        </Link>
-                    </nav>
-                </div>
-            </div>
-            {/* on scroll navbar */}
-            <div
-                id="nav2"
-                className="md:hidden w-full z-50 bg-black body-font text-white"
-            >
-                <div className="fade-in justify-between px-0 md:px-4 flex flex-wrap flex-col md:flex-row">
-                    <div
-                        id="navLine"
-                        className="md:mr-8 flex items-center justify-between pb-2 md:pb-0 md:px-0 px-2 md:border-none border-dashed border-gray-700"
-                    >
-                        <Link to="/" className="flex items-center">
-                            <img
-                                src={logo1}
-                                alt="Glazeline"
-                                width={400}
-                                className="mr-1"
-                            />
-                        </Link>
-                        <i
-                            className="md:hidden bi bi-list text-3xl cursor-pointer"
-                            onClick={showNav}
-                        ></i>
-                    </div>
-
-                    <div
-                        id="navBar"
-                        className="fade-in hidden md:flex md:items-center md:justify-end"
-                    >
-                        <nav className="md:text-xl md:ml-auto flex md:flex-row flex-col gap-16 items-center font-medium px-2">
+                <nav>
+                    <ul className="text-lg flex gap-12 font-medium">
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/catalogue">Catalogue</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
+                        <li>
                             <Link
                                 to="/"
-                                className="md:border-b-2 md:border-black md:hover:border-white md:pb-0.5 flex justify-between w-full md:w-auto py-2 border-b border-gray-700"
+                                className="border border-white hover:border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:font-semibold text-base py-2 px-4"
                             >
-                                <span>Home</span>
-                                <i className="bi bi-chevron-right md:hidden"></i>
+                                Get a Quote
                             </Link>
-                            <Link
-                                to="/catalogue/"
-                                className="md:border-b-2 md:border-black md:hover:border-white md:pb-0.5 flex justify-between w-full md:w-auto py-2 border-b border-gray-700"
-                            >
-                                Catalogue
-                                <i className="bi bi-chevron-right md:hidden"></i>
-                            </Link>
-                            <Link
-                                to="/about-us/"
-                                className="md:border-b-2 md:border-black md:hover:border-white md:pb-0.5 flex justify-between w-full md:w-auto py-2 border-b border-gray-700"
-                            >
-                                About
-                                <i className="bi bi-chevron-right md:hidden"></i>
-                            </Link>
-                            <Link
-                                to="#contact-us"
-                                className="md:border-b-2 border-black md:hover:border-white md:pb-0.5 flex justify-between w-full md:w-auto py-2"
-                            >
-                                Contact Us
-                                <i className="bi bi-chevron-right md:hidden"></i>
-                            </Link>
-                        </nav>
-                    </div>
-                </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
     );

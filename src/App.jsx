@@ -1,4 +1,4 @@
-import About from "./components/About";
+import Collection from "./components/Collection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
@@ -7,12 +7,13 @@ import Contact from "./components/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Partners from "./components/Partners";
 import Catalogue from "./components/Catalogue";
+import Introduction from "./components/Introduction";
 
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
-            <div className="mt-[91px] md:mt-[137px]">
+            <div>
                 <Routes>
                     <Route
                         exact
@@ -20,14 +21,15 @@ function App() {
                         element={
                             <>
                                 <Hero />
-                                <About />
+                                <Introduction />
+                                <Collection />
                                 <Gallery />
                                 <Partners />
-                                <Contact />
+                                <Contact /> 
                             </>
                         }
                     />
-                    <Route path="/about-us/" element={<About />} />
+                    <Route path="/about-us/" element={<Collection />} />
                     <Route path="/catalogue/" element={<Catalogue />} />
                 </Routes>
                 <Footer />

@@ -4,11 +4,11 @@ const Contact = () => {
     return (
         <section
             id="contact-us"
-            className="fade-in body-font relative bg-gray-200"
+            className="fade-in relative bg-gray-100 h-[calc(100vh-65px)] flex justify-center items-center px-2 md:px-4 py-12"
         >
-            <div className="max-w-7xl px-2 md:px-4 py-8 md:py-32 mx-auto">
-                <div className="md:mb-16 mb-8">
-                    <h1 className="text-2xl md:text-3xl xl:text-6xl font-medium font-vogue tracking-[0.12em] text-gray-900 text-center mb-2 md:mb-4 uppercase">
+            <div className="max-w-7xl mx-auto">
+                <div className="flex flex-col gap-4 mb-8">
+                    <h1 className="text-2xl md:text-3xl xl:text-6xl font-medium font-vogue tracking-wider text-center uppercase">
                         Have Questions?
                     </h1>
                     <p className="text-center text-lg md:text-xl ">
@@ -18,15 +18,12 @@ const Contact = () => {
                 <div className="flex gap-6 flex-col md:flex-row">
                     <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 overflow-hidden p-10 flex items-end justify-start relative">
                         <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.6216814988784!2d77.40882017521773!3d23.22045397903551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4392a23a3be1%3A0x655ffbcacd81e9ab!2sGlazeline%20Tiles%20and%20Ceramic%20Studio!5e0!3m2!1sen!2sin!4v1684520449733!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             className="absolute inset-0"
-                            frameborder="0"
-                            title="map"
-                            marginheight="0"
-                            marginwidth="0"
-                            scrolling="no"
-                            src="https://maps.google.com/maps?width=936&amp;height=400&amp;hl=en&amp;q=Glazeline tiles and ceramic studio&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
                         ></iframe>
                         <div className="bg-gray-100/30 backdrop-blur-xl rounded-3xl relative flex flex-wrap py-6 shadow-md">
                             <div className="lg:w-1/2 px-6">
@@ -63,51 +60,33 @@ const Contact = () => {
                             className="pageclip-form text-gray-800"
                             method="post"
                         >
-                            <h2 className="text-2xl  text-gray-900 text-center mb-1">
+                            <h2 className="text-2xl text-gray-900 text-center mb-1">
                                 Get in Touch
                             </h2>
-                            <p className="text-sm text-center mb-8">
+                            <p className="text-sm text-center mb-4">
                                 We are more than happy to help you!
                             </p>
                             {/* name */}
                             <div className="mb-6">
-                                <label
-                                    htmlFor="name"
-                                    className="block mb-2 text-sm font-medium "
-                                >
-                                    Your name
-                                </label>
                                 <input
                                     type="text"
                                     id="name"
                                     className="text-gray-800  text-sm rounded-md block w-full p-2.5 bg-gray-200 placeholder-gray-600 focus:outline-none"
-                                    placeholder="Jane Doe"
+                                    placeholder="Your Name"
                                     required
                                 />
                             </div>
                             {/* email */}
                             <div className="mb-6">
-                                <label
-                                    htmlFor="email"
-                                    className="block mb-2 text-sm font-medium "
-                                >
-                                    Your email
-                                </label>
                                 <input
                                     type="email"
                                     id="email"
                                     className="text-gray-800  text-sm rounded-md block w-full p-2.5 bg-gray-200 placeholder-gray-600 focus:outline-none"
-                                    placeholder="name@flowbite.com"
+                                    placeholder="your@email.com"
                                     required
                                 />
                             </div>
                             {/* message */}
-                            <label
-                                htmlhtmlFor="message"
-                                className="block mb-2 text-sm font-medium "
-                            >
-                                Your message
-                            </label>
                             <textarea
                                 id="message"
                                 rows="4"
@@ -116,7 +95,7 @@ const Contact = () => {
                             ></textarea>
                             <button
                                 type="submit"
-                                className="bg-indigo-500 hover:bg-green-700 px-3 py-2 rounded-md  text-white font-semibold w-full"
+                                className="border border-black hover:bg-black text-black hover:text-white px-3 py-2 font-semibold w-full"
                             >
                                 Submit
                             </button>
