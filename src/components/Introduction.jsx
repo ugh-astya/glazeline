@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
     return (
-        <div className="fade-in bg-gray-100 h-[calc(100vh-65px)] flex items-center justify-center px-2 md:px-4 py-12">
+        <div className="fade-in bg-gray-100 flex items-center justify-center px-2 md:px-4 py-20 md:py-28">
             <div className="max-w-4xl flex flex-col gap-16">
                 {/* first part */}
                 <div className="text-justify">

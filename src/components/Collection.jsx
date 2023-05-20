@@ -1,15 +1,15 @@
 import React from "react";
-import abt1 from "../assets/old/2.png";
-import abt2 from "../assets/old/3.png";
-import abt3 from "../assets/old/5.jpg";
-import abt4 from "../assets/old/6.jpg";
+import abt1 from "../assets/collection/wall_tiles.jpg";
+import abt2 from "../assets/collection/wood_flooring.jpg";
+import abt3 from "../assets/collection/floor_tiles.jpg";
+import abt4 from "../assets/collection/commercial_spaces.jpg";
 import CollectionItem from "./CollectionItem";
 
 const Collection = () => {
     return (
-        <section className="fade-in px-2 md:px-4 py-28">
+        <section className="fade-in px-2 md:px-4 py-20 md:py-28">
             <div className="max-w-7xl mx-auto">
-                <div className="max-w-3xl mx-auto text-center flex flex-col gap-4 mb-8">
+                <div className="max-w-3xl mx-auto text-center flex flex-col gap-4 mb-8 md:mb-12">
                     <p className="text-lg md:text-xl">
                         From wall tiles to commercial space design, from wood
                         flooring to kitchen backsplash - We've got it all!
@@ -17,7 +17,7 @@ const Collection = () => {
                     <p className="text-lg md:text-xl">
                         Visit us at Bhopal to go through
                     </p>
-                    <h2 className="uppercase text-2xl md:text-3xl xl:text-6xl pt-4 font-medium font-vogue tracking-wider">
+                    <h2 className="uppercase text-4xl md:text-5xl lg:text-6xl pt-4 font-medium font-vogue tracking-wider">
                         Our Collection
                     </h2>
                 </div>

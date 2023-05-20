@@ -20,7 +20,7 @@ function App() {
                         exact
                         path="/"
                         element={
-                            <div className="snap snap-y snap-mandatory">
+                            <div>
                                 <Hero />
                                 <Introduction />
                                 <Collection />

@@ -1,20 +1,22 @@
 import React from "react";
-import hero1 from "../assets/old/1.png";
-import hero2 from "../assets/old/6.jpg";
 import logo from "../assets/logo.svg";
+// import hero1 from "../assets/old/1.png";
+// import hero2 from "../assets/old/6.jpg";
+import hero1 from "../assets/hero_section/photo_1.jpg";
+import hero2 from "../assets/hero_section/photo_2.jpg";
 
 const Hero = () => {
     return (
-        <section className="fade-in h-[calc(100vh-65px)]">
+        <section className="fade-in md:h-[calc(100vh-73px)]">
             {/* first row */}
-            <div className="flex items-center">
+            <div className="flex items-center flex-col md:flex-row">
                 <img
                     src={hero1}
                     alt="Home Interior"
-                    className="w-1/2 h-[calc(50vh-32.5px)] object-cover object-bottom"
+                    className="w-full md:w-1/2 h-[calc(50vh-36.5px)] object-cover object-center"
                 />
-                <div className="w-1/2 flex flex-col justify-center pl-4 pr-12">
-                    <h1 className="font-hero text-2xl md:text-3xl font-medium mb-4 md:text-right text-center">
+                <div className="md:w-1/2 flex flex-col h-[calc(50vh-36.5px)] justify-center md:pl-4 md:pr-12">
+                    <h1 className="font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
                         The best rooms have something
                         <br />
                         to say about the people
@@ -24,22 +26,21 @@ const Hero = () => {
                 </div>
             </div>
             {/* first row */}
-            <div className="flex items-center">
-                <div className="w-1/2 flex flex-col justify-center items-center pr-4 pl-12">
-                    <h2 className="font-hero text-xl md:text-2xl font-medium mb-4 text-center">
+            <div className="flex items-center flex-col-reverse md:flex-row">
+                <div className="h-[calc(50vh-36.5px)] md:w-1/2 flex flex-col justify-center items-center md:pr-4 md:pl-12">
+                    <h2 className="font-hero text-2xl md:text-3xl font-medium text-center">
                         speak in style with
                     </h2>
                     <img
                         src={logo}
                         alt="GlazeLine"
-                        width="60%"
-                        className="mt-4 invert"
+                        className="w-full md:w-4/6 mt-4 invert"
                     />
                 </div>
                 <img
                     src={hero2}
                     alt="Home Interior"
-                    className="w-1/2 h-[calc(50vh-32.5px)] object-cover object-bottom"
+                    className="w-full md:w-1/2 h-[calc(50vh-36.5px)] object-cover object-top"
                 />
             </div>
         </section>

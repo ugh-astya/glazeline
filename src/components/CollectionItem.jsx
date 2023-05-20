@@ -5,18 +5,20 @@ const CollectionItem = ({ image, title, description, target, alignment }) => {
     let rowReverse = "";
     let itemsEnd = "";
     if (alignment === "right") {
-        rowReverse = "flex-row-reverse";
+        rowReverse = "md:flex-row-reverse";
         itemsEnd = "items-end";
+    } else {
+        rowReverse = "md:flex-row";
     }
 
     return (
-        <div className={`flex gap-12 ${rowReverse}`}>
+        <div className={`flex gap-12 flex-col ${rowReverse}`}>
             <img
                 src={image}
                 alt="Home Interior"
-                className="w-1/2 object-cover object-bottom"
+                className="w-full md:w-1/2 object-cover object-bottom"
             />
-            <div className={`w-1/2 flex flex-col ${itemsEnd}`}>
+            <div className={`md:w-1/2 flex flex-col ${itemsEnd}`}>
                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                     {title}
                 </h1>

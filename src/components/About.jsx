@@ -1,25 +1,25 @@
 import React from "react";
-import abt1 from "../assets/about_sophia.png";
-import abt2 from "../assets/old/2.png";
-import abt3 from "../assets/wood_flooring.jpg";
+import abt1 from "../assets/about_section/about_glazeline.jpg";
+import abt2 from "../assets/about_section/about_sophia.png";
+import abt3 from "../assets/about_section/our_value_proposition.jpg";
 import Gallery from "./Gallery";
 
 const About = () => {
     return (
         <>
-            <section className="fade-in px-2 md:px-4 py-20">
+            <section className="fade-in px-2 md:px-4 py-12 md:py-20">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col gap-24">
+                    <div className="flex flex-col gap-16 md:gap-24">
                         {/* about glazeline */}
-                        <div className="flex gap-12 justify-center items-center">
-                            <div className="w-1/2 flex justify-center items-center">
+                        <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+                            <div className="md:w-1/2 flex justify-center items-center">
                                 <img
-                                    src={abt2}
+                                    src={abt1}
                                     alt="Home Interior"
                                     className=""
                                 />
                             </div>
-                            <div className="w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
+                            <div className="md:w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
                                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                                     About GlazeLine
                                 </h1>
@@ -54,15 +54,15 @@ const About = () => {
                             </div>
                         </div>
                         {/* our founder */}
-                        <div className="flex gap-12 flex-row-reverse justify-center items-center">
-                            <div className="w-1/2 flex justify-center items-center">
+                        <div className="flex gap-12 flex-col md:flex-row-reverse justify-center items-center">
+                            <div className="md:w-1/2 flex justify-center items-center">
                                 <img
-                                    src={abt1}
+                                    src={abt2}
                                     alt="Home Interior"
                                     className=""
                                 />
                             </div>
-                            <div className="w-1/2 flex flex-col items-end gap-6 text-lg md:text-xl text-justify">
+                            <div className="md:w-1/2 flex flex-col md:items-end gap-6 text-lg md:text-xl text-justify">
                                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                                     Our Founder
                                 </h1>
@@ -88,15 +88,15 @@ const About = () => {
                             </div>
                         </div>
                         {/* our founder */}
-                        <div className="flex gap-12 justify-center items-center">
-                            <div className="w-1/2 flex justify-center items-center">
+                        <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
+                            <div className="md:w-1/2 flex justify-center items-center">
                                 <img
                                     src={abt3}
                                     alt="Home Interior"
                                     className=""
                                 />
                             </div>
-                            <div className="w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
+                            <div className="md:w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
                                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                                     Our Value Proposition
                                 </h1>
