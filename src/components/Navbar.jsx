@@ -40,8 +40,8 @@ const Navbar = () => {
                             // className="invert"
                         />
                     </Link>
-                    <nav className="hidden lg:block">
-                        <ul className="text-lg flex gap-12 font-medium">
+                    <nav className="hidden lg:block uppercase">
+                        <ul className="flex gap-12 font-medium">
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     to="/"
-                                    className="border border-white hover:border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:font-semibold text-base py-2 px-4"
+                                    className="border border-white hover:border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:font-semibold py-2 px-4"
                                 >
                                     Get a Quote
                                 </Link>

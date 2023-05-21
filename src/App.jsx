@@ -9,6 +9,7 @@ import Partners from "./components/Partners";
 import Catalogue from "./components/Catalogue";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
+import Carousel from "./components/Carousel";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                             <div>
                                 <Hero />
                                 <Introduction />
+                                <Carousel />
                                 <Collection />
                                 <Gallery />
                                 <Partners />

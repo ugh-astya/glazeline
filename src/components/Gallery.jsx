@@ -14,9 +14,6 @@ import img5 from "../assets/our_gallery/5.jpg";
 import img6 from "../assets/our_gallery/6.jpg";
 import img7 from "../assets/our_gallery/7.jpg";
 import img8 from "../assets/our_gallery/8.jpg";
-import img9 from "../assets/our_gallery/9.jpg";
-import img10 from "../assets/our_gallery/10.jpg";
-import img11 from "../assets/our_gallery/11.jpg";
 
 const Gallery = () => {
     return (
