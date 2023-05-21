@@ -8,7 +8,7 @@ import CollectionItem from "./CollectionItem";
 const Collection = () => {
     return (
         <section className="fade-in px-2 md:px-4 py-20 md:py-28">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-4xl mx-auto">
                 <div className="max-w-3xl mx-auto text-center flex flex-col gap-4 mb-8 md:mb-12">
                     <p className="text-lg md:text-xl">
                         From wall tiles to commercial space design, from wood
@@ -22,7 +22,7 @@ const Collection = () => {
                     </h2>
                 </div>
                 {/* collections */}
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-12">
                     <CollectionItem
                         image={abt1}
                         title="Wall Tiles"

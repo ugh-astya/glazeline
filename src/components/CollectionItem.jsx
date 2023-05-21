@@ -19,16 +19,16 @@ const CollectionItem = ({ image, title, description, target, alignment }) => {
                 className="w-full md:w-1/2 object-cover object-bottom"
             />
             <div className={`md:w-1/2 flex flex-col ${itemsEnd}`}>
-                <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                <h1 className="uppercase font-semibold text-2xl tracking-widest">
                     {title}
                 </h1>
-                <p className="my-6 text-lg md:text-xl text-justify">
+                <p className="pt-2 text-lg text-justify lineHeight145rem">
                     {description}
                 </p>
-                <div>
+                <div className="mt-5">
                     <Link
                         to={target}
-                        className="bg-black text-white uppercase text-lg py-2 px-4"
+                        className="bg-black text-white uppercase py-2 px-4"
                     >
                         Explore <i className="bi bi-arrow-right ml-2"></i>
                     </Link>

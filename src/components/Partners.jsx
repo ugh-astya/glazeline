@@ -9,7 +9,7 @@ import partner6 from "../assets/partners/welspun.png";
 const Partners = () => {
     return (
         <section className="fade-in px-2 md:px-4 py-20 md:py-28">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-vogue tracking-wider text-center mb-8 md:mb-16 uppercase">
                     Our Partners
                 </h1>

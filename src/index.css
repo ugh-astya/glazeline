@@ -81,3 +81,6 @@ body {
 ::-webkit-scrollbar-track {
     background-color: #ffffff;
 }
+.lineHeight145rem {
+    line-height: 1.45rem !important;
+}
