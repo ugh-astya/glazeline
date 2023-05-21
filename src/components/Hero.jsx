@@ -1,20 +1,63 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import { Swiper, SwiperSlide } from "swiper/react";
 // import hero1 from "../assets/old/1.png";
 // import hero2 from "../assets/old/6.jpg";
-import hero1 from "../assets/hero_section/photo_1.png";
+import hero11 from "../assets/hero_section/ph1/1.png";
+import hero12 from "../assets/hero_section/ph1/2.png";
+import hero13 from "../assets/hero_section/ph1/3.jpg";
+import hero14 from "../assets/hero_section/ph1/4.jpg";
 import hero2 from "../assets/hero_section/photo_2.png";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
 
 const Hero = () => {
     return (
         <section className="fade-in md:h-[calc(100vh-69px)]">
             {/* first row */}
             <div className="flex items-center flex-col md:flex-row">
-                <img
-                    src={hero1}
-                    alt="Home Interior"
-                    className="w-full md:w-1/2 h-[calc(50vh-34.5px)] object-cover object-center"
-                />
+                <Swiper
+                    direction={"vertical"}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper w-full md:w-1/2 h-[calc(50vh-34.5px)]"
+                >
+                    <SwiperSlide>
+                        <img
+                            src={hero11}
+                            alt="Home Interior"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                            src={hero12}
+                            alt="Home Interior"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                            src={hero13}
+                            alt="Home Interior"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                            src={hero14}
+                            alt="Home Interior"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
+                        />
+                    </SwiperSlide>
+                </Swiper>
                 <div className="md:w-1/2 flex h-[calc(50vh-34.5px)] items-center justify-end md:pl-4 md:pr-24">
                     <h1 className="font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
                         The best rooms have something

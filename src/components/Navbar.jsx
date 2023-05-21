@@ -41,7 +41,7 @@ const Navbar = () => {
                         />
                     </Link>
                     <nav className="hidden lg:block uppercase">
-                        <ul className="flex gap-12 font-medium">
+                        <ul className="flex gap-12 font-semibold">
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
