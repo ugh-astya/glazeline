@@ -1,8 +1,12 @@
 import React from "react";
-import abt1 from "../assets/collection/wall_tiles.jpg";
-import abt2 from "../assets/collection/wood_flooring.jpg";
-import abt3 from "../assets/collection/floor_tiles.jpg";
-import abt4 from "../assets/collection/commercial_spaces.jpg";
+// import abt1 from "../assets/collection/wall_tiles.jpg";
+// import abt2 from "../assets/collection/wood_flooring.jpg";
+// import abt3 from "../assets/collection/floor_tiles.jpg";
+// import abt4 from "../assets/collection/commercial_spaces.jpg";
+import abt1 from "../assets/collection/cropped/wall.png";
+import abt2 from "../assets/collection/cropped/wood.png";
+import abt3 from "../assets/collection/cropped/floor.png";
+import abt4 from "../assets/collection/cropped/commercial.png";
 import CollectionItem from "./CollectionItem";
 
 const Collection = () => {
