@@ -4,40 +4,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 // import images
-import img1 from "../assets/carousel/1.png";
-import img2 from "../assets/carousel/2.png";
-import img3 from "../assets/carousel/3.png";
-import img4 from "../assets/carousel/4.png";
-import img5 from "../assets/carousel/5.png";
-import img6 from "../assets/carousel/6.png";
+import img1 from "../assets/carousel/1.jpg";
+import img2 from "../assets/carousel/2.jpg";
+import img3 from "../assets/carousel/3.jpg";
+import img4 from "../assets/carousel/4.jpg";
+import img5 from "../assets/carousel/5.jpg";
+import img6 from "../assets/carousel/6.jpg";
 import img7 from "../assets/carousel/7.jpg";
 import img8 from "../assets/carousel/8.jpg";
+import img9 from "../assets/carousel/9.jpg";
+import img10 from "../assets/carousel/10.jpg";
 
 const Carousel = () => {
     return (
         <div className="h-[calc(100vh-69px)] bg-red-100">
             <Swiper
-                // breakpoints={{
-                //     640: {
-                //         slidesPerView: 1,
-                //     },
-                //     768: {
-                //         slidesPerView: 2,
-                //     },
-                //     1024: {
-                //         slidesPerView: 3,
-                //     },
-                // }}
                 slidesPerView={1}
                 spaceBetween={0}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 loop={true}
                 pagination={{
                     clickable: true,
                 }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide>
@@ -92,6 +87,20 @@ const Carousel = () => {
                 <SwiperSlide>
                     <img
                         src={img8}
+                        alt=""
+                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img
+                        src={img9}
+                        alt=""
+                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img
+                        src={img10}
                         alt=""
                         className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
                     />

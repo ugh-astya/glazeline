@@ -19,9 +19,9 @@ const CollectionItem = ({ image, title, description, target, alignment }) => {
                 className="w-full md:w-1/2 object-cover object-bottom"
             />
             <div className={`md:w-1/2 flex flex-col ${itemsEnd}`}>
-                <h1 className="uppercase font-semibold text-2xl tracking-widest">
+                <h2 className="uppercase font-semibold text-2xl tracking-widest">
                     {title}
-                </h1>
+                </h2>
                 <p className="pt-2 text-lg text-justify lineHeight145rem">
                     {description}
                 </p>

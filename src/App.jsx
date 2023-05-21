@@ -10,6 +10,7 @@ import Catalogue from "./components/Catalogue";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Carousel from "./components/Carousel";
+import ChooseUs from "./components/ChooseUs";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                                 <Hero />
                                 <Introduction />
                                 <Carousel />
+                                <ChooseUs />
                                 <Collection />
                                 <Gallery />
                                 <Partners />

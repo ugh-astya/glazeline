@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 // import images
 import img1 from "../assets/our_gallery/1.jpg";
 import img2 from "../assets/our_gallery/2.jpg";
@@ -37,11 +37,15 @@ const Gallery = () => {
                     slidesPerView={1}
                     spaceBetween={10}
                     loop={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
                     pagination={{
                         clickable: true,
                     }}
                     navigation={true}
-                    modules={[Pagination, Navigation]}
+                    modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
                     <SwiperSlide>
