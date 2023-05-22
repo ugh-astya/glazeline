@@ -81,11 +81,7 @@ const Hero = () => {
                 </Swiper>
                 <div className="md:w-1/2 flex h-[calc(50vh-34.5px)] items-center justify-end md:pl-4 md:pr-24">
                     <h1 className="font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
-                        The best rooms have something
-                        <br />
-                        to say about the people
-                        <br />
-                        who live in them
+                        Living spaces are a reflection <br /> of ones' self
                     </h1>
                 </div>
             </div>

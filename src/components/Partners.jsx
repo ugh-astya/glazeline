@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import partner1 from "../assets/partners/blackberry.png";
 import partner2 from "../assets/partners/creanza.png";
 import partner3 from "../assets/partners/essel.png";

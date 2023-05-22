@@ -56,10 +56,10 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link
-                                    to="/"
+                                    to="mailto:glazelinestudio@gmail.com"
                                     className="border border-white hover:border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:font-semibold py-2 px-4"
                                 >
-                                    Get a Quote
+                                    Send a message
                                 </Link>
                             </li>
                         </ul>

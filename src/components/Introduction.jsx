@@ -11,9 +11,8 @@ const Introduction = () => {
                     </h2>
                     <p className="mt-6 text-lg md:text-xl">
                         With 20+ years of experience in the field and our
-                        offline showroom at Patrakar Colony, Bhopal, we provide
-                        the solution to all your home renovation and tiling
-                        needs.
+                        offline showroom at Bhopal, we provide the solution to
+                        all your home renovation and tiling needs.
                     </p>
                 </div>
                 {/* second part */}
@@ -33,16 +32,23 @@ const Introduction = () => {
                         have something for everyone- any budget.
                     </p>
                     <p className="mt-4 text-lg md:text-xl">
-                        We also provide interior design services on a budget. We
-                        gauge your needs and tastes to deliver custom-designed
-                        pieces to fit your vision. Be it the latest modular
-                        kitchen design, TV unit design, master/kids' bedroom
-                        renovations or living room interiors- we do it all.{" "}
+                        If your home needs a remodelling, try our interior
+                        design services. We gauge your needs and tastes to
+                        deliver custom-designed pieces to fit your vision. Be it
+                        the latest modular kitchen design, TV unit design,
+                        master/kids' bedroom renovations or living room
+                        interiors- we do it all.
                     </p>
                     <p className="mt-4 text-lg md:text-xl">
                         Just drop us a call at{" "}
                         <span className="font-semibold">+91-700-058-8373</span>{" "}
                         to book a consultation session today.
+                    </p>
+                    <p className="mt-4 text-lg md:text-xl">
+                        Or feel free to walk into our exclusive showroom at Shop
+                        no. 3, Patrakar Colony, Bhopal (address is hyperlinked
+                        to google maps) between 11 AM to 8:30 PM, Tuesday to
+                        Sunday.
                     </p>
                 </div>
             </div>
