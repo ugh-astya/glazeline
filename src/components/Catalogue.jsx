@@ -1,26 +1,12 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { Pagination, Navigation } from "swiper";
-
-// import images
-import img1 from "../assets/catalogue/wooden-images/0001.jpg";
-import img2 from "../assets/catalogue/wooden-images/0002.jpg";
-import img3 from "../assets/catalogue/wooden-images/0003.jpg";
-import img4 from "../assets/catalogue/wooden-images/0004.jpg";
-import img5 from "../assets/catalogue/wooden-images/0002.jpg";
-import img6 from "../assets/catalogue/wooden-images/0002.jpg";
-import img7 from "../assets/catalogue/wooden-images/0002.jpg";
-import img8 from "../assets/catalogue/wooden-images/0002.jpg";
-
-function showFloor() {}
-function showWall() {}
+import { Link } from "react-router-dom";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import {
+    WoodImages,
+    FloorImages,
+    CommImages,
+    WallImages,
+} from "./CatalogueItems";
 
 const Catalogue = () => {
     return (
@@ -33,89 +19,43 @@ const Catalogue = () => {
                     From wall tiles to commercial space design, from wood
                     flooring to kitchen backsplash - We've got it all!
                 </p>
-                <div class="font-semibold text-lg text-center uppercase tracking-[0.2em]">
-                    <ul class="flex gap-8">
-                        <li
-                            class="w-1/4 mr-2 inline-block p-2 cursor-pointer border-b border-gray-700 pb-1"
-                            onClick={showFloor}
-                        >
-                            Floor Tiles
-                        </li>
-                        <li
-                            class="w-1/4 mr-2 inline-block p-2 cursor-pointer"
-                            onClick={showWall}
-                        >
-                            Wall Tiles
-                        </li>
-                        {/* <li
-                            class="w-1/4 mr-2 inline-block p-2 cursor-pointer border-b border-gray-700"
-                            onClick={showComm}
-                        >
-                            Commercial Spaces
-                        </li>
-                        <li
-                            class="w-1/4 mr-2 inline-block p-2 cursor-pointer border-b border-gray-700"
-                            onClick={showWood}
-                        >
+                <Tabs className="Tabs">
+                    <TabList className="grid grid-cols-2 md:grid-cols-4 gap-4 font-semibold md:text-lg text-center uppercase tracking-[0.2em]">
+                        <Tab className="outline-none inline-block cursor-pointer pb-2">
                             Wood Flooring
-                        </li> */}
-                    </ul>
-                </div>
-                {/* floor */}
-                <div id="floorCat">
-                    <Swiper
-                        pagination={{
-                            type: "fraction",
-                        }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
-                        className="mySwiper h-[calc(100vh-161px)] border-2 my-4"
-                    >
-                        <SwiperSlide className="flex justify-center">
-                            <img
-                                src={img1}
-                                alt=""
-                                className="h-[calc(100vh-161px)] object-contain"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide className="flex justify-center">
-                            <img
-                                src={img2}
-                                alt=""
-                                className="h-[calc(100vh-161px)] object-contain"
-                            />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-                {/* wall */}
-                <div id="wallCat">
-                    <Swiper
-                        pagination={{
-                            type: "fraction",
-                        }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
-                        className="mySwiper h-[calc(100vh-161px)] border-2 my-4"
-                    >
-                        <SwiperSlide className="flex justify-center">
-                            <img
-                                src={img3}
-                                alt=""
-                                className="h-[calc(100vh-161px)] object-contain"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide className="flex justify-center">
-                            <img
-                                src={img4}
-                                alt=""
-                                className="h-[calc(100vh-161px)] object-contain"
-                            />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
+                        </Tab>
+                        <Tab className="outline-none inline-block cursor-pointer pb-2">
+                            Floor Tiles
+                        </Tab>
+                        <Tab className="outline-none inline-block cursor-pointer pb-2">
+                            Commercial Spaces
+                        </Tab>
+                        <Tab className="outline-none inline-block cursor-pointer pb-2">
+                            Wall Tiles
+                        </Tab>
+                    </TabList>
+                    <TabPanel className="fade-in">
+                        <WoodImages />
+                    </TabPanel>
+                    <TabPanel>
+                        <FloorImages />
+                    </TabPanel>
+                    <TabPanel>
+                        <CommImages />
+                    </TabPanel>
+                    <TabPanel>
+                        <WallImages />
+                    </TabPanel>
+                </Tabs>
                 <p className="mt-8 text-lg md:text-xl">
                     Found something you like? Drop us a call at{" "}
-                    <span className="font-semibold">+91-700-058-8373</span>.
+                    <Link
+                        to="tel:+917000588373"
+                        className="font-semibold text-blue-800"
+                    >
+                        +91-700-058-8373
+                    </Link>
+                    .
                 </p>
             </div>
         </div>

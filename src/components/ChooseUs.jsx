@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CountUp, { useCountUp } from "react-countup";
+import { Waypoint } from "react-waypoint";
 
 const ChooseUs = () => {
     return (
@@ -22,32 +24,60 @@ const ChooseUs = () => {
                         <div className="flex justify-between">
                             <div className="hidden md:flex flex-col items-start">
                                 <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold">
-                                    1,00,000+
+                                    <CountUp
+                                        className="account-balance"
+                                        start={999}
+                                        end={100000}
+                                        duration={2}
+                                        separator=", "
+                                        suffix="+"
+                                        onEnd={() => console.log("Ended! 👏")}
+                                        onStart={() =>
+                                            console.log("Started! 💨")
+                                        }
+                                    >
+                                        {({ countUpRef, start }) => (
+                                            <div>
+                                                <span ref={countUpRef} />
+                                                <Waypoint
+                                                    onEnter={start}
+                                                    bottomOffset="-10%"
+                                                ></Waypoint>
+                                            </div>
+                                        )}
+                                    </CountUp>
                                 </h2>
                                 <p className="text-lg">square feet tiled</p>
                             </div>
                             <div className="hidden md:flex flex-col items-start">
                                 <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold">
-                                    20+
+                                    <CountUp
+                                        className="account-balance"
+                                        start={0}
+                                        end={20}
+                                        duration={2}
+                                        separator=", "
+                                        suffix="+"
+                                        onEnd={() => console.log("Ended! 👏")}
+                                        onStart={() =>
+                                            console.log("Started! 💨")
+                                        }
+                                    >
+                                        {({ countUpRef, start }) => (
+                                            <div>
+                                                <span ref={countUpRef} />
+                                                <Waypoint
+                                                    onEnter={start}
+                                                    bottomOffset="-10%"
+                                                ></Waypoint>
+                                            </div>
+                                        )}
+                                    </CountUp>
                                 </h2>
                                 <p className="text-lg">years of experience</p>
                             </div>
                         </div>
                     </div>
-                    {/* <div className="md:w-1/5 flex md:flex-col gap-4 justify-between items-center text-center md:text-left">
-                        <div className="md:hidden flex flex-col">
-                            <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold">
-                                1,00,000+
-                            </h2>
-                            <p className="text-lg">square feet tiled</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold">
-                                20+
-                            </h2>
-                            <p className="text-lg">years of experience</p>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>

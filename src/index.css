@@ -84,3 +84,24 @@ body {
 .lineHeight145rem {
     line-height: 1.45rem !important;
 }
+.react-tabs__tab--selected {
+    @apply border-b border-black;
+}
+.tiles-back {
+    background: url(/tiles_gray.png) left -19vw bottom 0 no-repeat,
+        url(/tiles.png) right -18vw bottom 5vw no-repeat;
+    background-color: #f3f4f6;
+}
+
+@keyframes animatedBird {
+    from {
+        background-position: left -19vw bottom -30vw, right -18vw bottom 50vw;
+    }
+    to {
+        background-position: left -19vw bottom 0, right -18vw bottom 5vw;
+    }
+}
+
+.actAnim {
+    animation: animatedBird 1s linear 1;
+}

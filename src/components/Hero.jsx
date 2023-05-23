@@ -81,7 +81,7 @@ const Hero = () => {
                 </Swiper>
                 <div className="md:w-1/2 flex h-[calc(50vh-34.5px)] items-center justify-end md:pl-4 md:pr-24">
                     <h1 className="font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
-                        Living spaces are a reflection <br /> of ones' self
+                        Living spaces are a reflection <br /> of one's self
                     </h1>
                 </div>
             </div>
