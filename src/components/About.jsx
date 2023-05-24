@@ -16,8 +16,8 @@ const About = () => {
                 <img src={top} alt="Glazeline" width="100%" />
                 <div className="flex flex-col my-16 md:my-24 gap-16 md:gap-24">
                     {/* about glazeline */}
-                    <div className="flex flex-col md:flex-row justify-center items-center">
-                        <div className="md:w-2/6 flex items-center pr-12">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+                        <div className="md:w-2/6 flex items-center">
                             <img src={abt1} alt="Home Interior" className="" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
@@ -50,13 +50,13 @@ const About = () => {
                                 reflections of their personal style and vision.
                             </p>
                         </div>
-                        <div className="w-1/6">
+                        <div className="w-1/6 flex justify-end">
                             <img src={scene1} alt="" />
                         </div>
                     </div>
                     {/* our founder */}
-                    <div className="flex flex-col md:flex-row-reverse justify-center items-center">
-                        <div className="md:w-2/6 flex items-center pl-12">
+                    <div className="flex flex-col md:flex-row-reverse justify-center items-center gap-20">
+                        <div className="md:w-2/6 flex items-center justify-end">
                             <img src={abt2} alt="Home Interior" className="" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
@@ -88,8 +88,8 @@ const About = () => {
                     </div>
                     {/* our values */}
                     <div>
-                        <div className="flex flex-col md:flex-row justify-center items-center">
-                            <div className="md:w-2/6 flex items-center pr-12">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+                            <div className="md:w-2/6 flex items-center">
                                 <img
                                     src={abt3}
                                     alt="Home Interior"
@@ -133,7 +133,7 @@ const About = () => {
                             <div className="w-1/6"></div>
                         </div>
                         <div className="flex justify-end">
-                            <div className="w-2/6">
+                            <div className="w-2/6 flex justify-end">
                                 <img src={scene3} alt="" />
                             </div>
                         </div>
