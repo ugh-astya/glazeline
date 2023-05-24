@@ -95,7 +95,7 @@ const Hero = () => {
             </div>
             {/* first row */}
             <div className="flex items-center flex-col-reverse md:flex-row">
-                <div className="h-[calc(50vh-34.5px)] md:w-1/2 flex flex-col justify-center items-center px-4 md:px-12">
+                <div className="h-[calc(50vh-80.5px)] md:h-[calc(50vh-34.5px)] md:w-1/2 flex flex-col justify-center items-center px-4 md:px-12">
                     <h2 className="font-hero text-xl md:text-2xl font-medium text-center">
                         speak in style with
                     </h2>
