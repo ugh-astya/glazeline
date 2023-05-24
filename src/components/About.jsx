@@ -3,11 +3,15 @@ import abt1 from "../assets/about_section/about_glazeline.jpg";
 import abt2 from "../assets/about_section/about_sophia.png";
 import abt3 from "../assets/about_section/our_value_proposition.jpg";
 import Gallery from "./Gallery";
+import { DidMount } from "./CommonFunctions";
 
 const About = () => {
     return (
         <>
-            <section className="fade-in px-2 md:px-4 py-12 md:py-20">
+            <section
+                onLoad={DidMount}
+                className="fade-in px-2 md:px-4 py-12 md:py-20"
+            >
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col gap-16 md:gap-24">
                         {/* about glazeline */}

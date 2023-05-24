@@ -1,8 +1,4 @@
 import React from "react";
-// import abt1 from "../assets/collection/wall_tiles.jpg";
-// import abt2 from "../assets/collection/wood_flooring.jpg";
-// import abt3 from "../assets/collection/floor_tiles.jpg";
-// import abt4 from "../assets/collection/commercial_spaces.jpg";
 import abt1 from "../assets/collection/cropped/wall.png";
 import abt2 from "../assets/collection/cropped/wood.png";
 import abt3 from "../assets/collection/cropped/floor.png";
@@ -29,8 +25,8 @@ const Collection = () => {
                 <div className="flex flex-col gap-12">
                     <CollectionItem
                         image={abt1}
+                        id="wall"
                         title="Wall Tiles"
-                        target="/"
                         alignment="left"
                         description="Set of high-quality wall tiles that fit any design,
                             colour-scheme and budget. Customize your bathroom,
@@ -42,8 +38,8 @@ const Collection = () => {
                     />
                     <CollectionItem
                         image={abt2}
+                        id="wood"
                         title="Wood Flooring"
-                        target="/"
                         alignment="right"
                         description="Return to nature with a high-quality wood or a
                         classic rustic finish wood flooring. Built for all
@@ -54,8 +50,8 @@ const Collection = () => {
                     />
                     <CollectionItem
                         image={abt3}
+                        id="floor"
                         title="Floor Tiles"
-                        target="/"
                         alignment="left"
                         description="We have an extensive selection of floor tiles,
                         Italian marble, carvings, matte-finish and
@@ -67,8 +63,8 @@ const Collection = () => {
                     />
                     <CollectionItem
                         image={abt4}
+                        id="comm"
                         title="Commercial Spaces"
-                        target="/"
                         alignment="right"
                         description="Tiles perfect for commercial spaces- tech offices or
                         corporate lobbies, that are durable and modern. With

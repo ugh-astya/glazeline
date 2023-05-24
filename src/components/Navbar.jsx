@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/glazeline_logo.svg";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     function showMenu() {
@@ -9,23 +10,6 @@ const Navbar = () => {
             elem.classList.remove("hidden");
         } else {
             elem.classList.add("hidden");
-        }
-    }
-    // window.onscroll = function () {
-    //     scrollFunction();
-    // };
-
-    function scrollFunction() {
-        if (
-            (document.body.scrollTop > 60 ||
-                document.documentElement.scrollTop > 60) &&
-            document.documentElement.scrollWidth > 767.99
-        ) {
-            document.getElementById("nav1").classList.remove("md:flex");
-            document.getElementById("nav2").classList.remove("md:hidden");
-        } else if (document.documentElement.scrollWidth > 767.99) {
-            document.getElementById("nav1").classList.add("md:flex");
-            document.getElementById("nav2").classList.add("md:hidden");
         }
     }
     return (
@@ -41,26 +25,32 @@ const Navbar = () => {
                         />
                     </Link>
                     <nav className="hidden lg:block uppercase">
-                        <ul className="flex gap-12 font-semibold">
+                        <ul className="flex items-center gap-12 font-semibold">
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="/catalogue">Catalogue</Link>
+                                <Link to="/catalogue/wood">Catalogue</Link>
                             </li>
                             <li>
                                 <Link to="/about-us">About</Link>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/#contact">Contact</Link>
                             </li>
                             <li>
-                                <Link
-                                    to="mailto:glazelinestudio@gmail.com"
-                                    className="border border-white hover:border-gray-300 hover:bg-gray-300 text-white hover:text-black hover:font-semibold py-2 px-4"
+                                <a
+                                    href="https://api.whatsapp.com/send?phone=917000588373"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    Send a message
-                                </Link>
+                                    <button className="cssbuttons-io">
+                                        <span>
+                                            <i class="bi bi-whatsapp mr-2"></i>
+                                            Message
+                                        </span>
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </nav>

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import CountUp, { useCountUp } from "react-countup";
+import CountUp from "react-countup";
 import { Waypoint } from "react-waypoint";
 
 const ChooseUs = () => {
@@ -25,16 +24,11 @@ const ChooseUs = () => {
                             <div className="hidden md:flex flex-col items-start">
                                 <h2 className="text-2xl sm:text-4xl md:text-7xl font-bold">
                                     <CountUp
-                                        className="account-balance"
-                                        start={999}
+                                        start={99000}
                                         end={100000}
-                                        duration={2}
-                                        separator=", "
+                                        duration={3}
+                                        separator=","
                                         suffix="+"
-                                        onEnd={() => console.log("Ended! 👏")}
-                                        onStart={() =>
-                                            console.log("Started! 💨")
-                                        }
                                     >
                                         {({ countUpRef, start }) => (
                                             <div>
@@ -55,13 +49,9 @@ const ChooseUs = () => {
                                         className="account-balance"
                                         start={0}
                                         end={20}
-                                        duration={2}
+                                        duration={5}
                                         separator=", "
                                         suffix="+"
-                                        onEnd={() => console.log("Ended! 👏")}
-                                        onStart={() =>
-                                            console.log("Started! 💨")
-                                        }
                                     >
                                         {({ countUpRef, start }) => (
                                             <div>

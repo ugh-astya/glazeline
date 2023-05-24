@@ -13,14 +13,10 @@ const Introduction = () => {
         elem.classList.remove("actAnim");
     }
     return (
-        <Waypoint
-            onEnter={EntryHandle}
-            onLeave={LeaveHandle}
-            bottomOffset="30%"
-        >
+        <Waypoint onEnter={EntryHandle} onLeave={LeaveHandle} bottomOffset="1%">
             <div
                 id="intro"
-                className="fade-in bg-gray-100 flex items-center justify-center px-2 md:px-4 py-20 md:py-28"
+                className="bg-gray-100 flex items-center justify-center px-2 md:px-4 py-20 md:py-28"
             >
                 <div className="max-w-4xl flex flex-col gap-16">
                     {/* first part */}
@@ -61,16 +57,35 @@ const Introduction = () => {
                         </p>
                         <p className="mt-4 text-lg md:text-xl">
                             Just drop us a call at{" "}
-                            <span className="font-semibold">
+                            <a
+                                href="tel:+917000588373"
+                                className="font-semibold"
+                            >
                                 +91-700-058-8373
-                            </span>{" "}
+                            </a>{" "}
+                            or message us on{" "}
+                            <a
+                                href="https://api.whatsapp.com/send?phone=917000588373"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-200 px-2 py-0.5 rounded"
+                            >
+                                <i class="bi bi-whatsapp mr-1"></i>WhatsApp
+                            </a>{" "}
                             to book a consultation session today.
                         </p>
                         <p className="mt-4 text-lg md:text-xl">
                             Or feel free to walk into our exclusive showroom at
-                            Shop no. 3, Patrakar Colony, Bhopal (address is
-                            hyperlinked to google maps) between 11 AM to 8:30
-                            PM, Tuesday to Sunday.
+                            <a
+                                href="https://goo.gl/maps/eo733vbdys2tmkTw8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-800 font-semibold"
+                            >
+                                {" "}
+                                Shop no. 3, Patrakar Colony, Bhopal{" "}
+                            </a>{" "}
+                            between 11 AM to 8:30 PM, Tuesday to Sunday.
                         </p>
                     </div>
                 </div>

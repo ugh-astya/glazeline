@@ -1,19 +1,62 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ title, desc, tag }) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_ip6mcn9",
+                "template_vh42q5l",
+                form.current,
+                "4oXgNyVOiT8_BAlj8"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
     return (
         <section
-            id="contact-us"
+            id="contact"
             className="fade-in relative bg-gray-100 flex justify-center items-center px-2 md:px-4 py-20 md:py-28"
         >
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col gap-4 mb-8">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium font-vogue tracking-wider text-center uppercase">
-                        Have Questions?
+                        {title}
                     </h1>
-                    <p className="text-center text-lg md:text-xl ">
-                        Send us a message
-                    </p>
+                    {tag === "catalogue" ? (
+                        <p className="text-center text-lg md:text-xl ">
+                            Just drop us a call at{" "}
+                            <a
+                                href="tel:+917000588373"
+                                className="font-semibold"
+                            >
+                                +91-700-058-8373
+                            </a>{" "}
+                            or message us on{" "}
+                            <a
+                                href="https://api.whatsapp.com/send?phone=917000588373"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-200 px-2 py-0.5 rounded"
+                            >
+                                <i class="bi bi-whatsapp mr-1"></i>WhatsApp
+                            </a>{" "}
+                        </p>
+                    ) : (
+                        <p className="text-center text-lg md:text-xl ">
+                            {desc}
+                        </p>
+                    )}
                 </div>
                 <div className="flex gap-6 flex-col md:flex-row">
                     <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 border-2 overflow-hidden p-10 flex items-end justify-start relative">
@@ -55,11 +98,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/3 md:w-1/2 bg-white px-6 flex flex-col md:ml-auto py-8 shadow-lg">
-                        <form
-                            action="https://send.pageclip.co/7rx55FqsFgItLufNvqfRR2npLr6QbxX7/contact-form"
-                            className="pageclip-form"
-                            method="post"
-                        >
+                        <form ref={form} onSubmit={sendEmail}>
                             <h2 className="text-2xl font-semibold text-center mb-1">
                                 Get in Touch
                             </h2>
@@ -71,6 +110,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     id="name"
+                                    name="user_name"
                                     className="block w-full p-2.5 border border-black placeholder-gray-600 focus:outline-none"
                                     placeholder="Your Name"
                                     required
@@ -81,6 +121,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="user_email"
                                     className="block w-full p-2.5 border border-black placeholder-gray-600 focus:outline-none"
                                     placeholder="your@email.com"
                                     required
@@ -90,11 +131,13 @@ const Contact = () => {
                             <textarea
                                 id="message"
                                 rows="4"
+                                name="message"
                                 className="block w-full p-2.5 border border-black placeholder-gray-600 focus:outline-none mb-4"
                                 placeholder="Leave your message..."
                             ></textarea>
                             <button
                                 type="submit"
+                                value="Send"
                                 className="bg-black text-white px-3 py-2 font-semibold w-full"
                             >
                                 Submit

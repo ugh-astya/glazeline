@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Partners from "./components/Partners";
 import Catalogue from "./components/Catalogue";
 import Introduction from "./components/Introduction";
@@ -14,7 +14,7 @@ import ChooseUs from "./components/ChooseUs";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar />
             <div>
                 <Routes>
@@ -30,16 +30,19 @@ function App() {
                                 <Collection />
                                 <Gallery />
                                 <Partners />
-                                <Contact />
+                                <Contact
+                                    title="Have Questions?"
+                                    desc="Send us a message"
+                                />
                             </div>
                         }
                     />
                     <Route exact path="/about-us/" element={<About />} />
-                    <Route exact path="/catalogue/" element={<Catalogue />} />
+                    <Route path="/catalogue/:id" element={<Catalogue />} />
                 </Routes>
                 <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
