@@ -11,7 +11,7 @@ const ChooseUs = () => {
                 </h2>
                 <div className="flex flex-col md:flex-row gap-10 md:gap-12">
                     <div className="flex flex-col">
-                        <p className="text-lg md:text-xl mb-8 text-center md:text-left">
+                        <p className="text-lg md:text-xl mb-8 text-justify md:text-left">
                             When it comes to your home renovation, tiling, and
                             interior design needs, trust Glazeline to provide a
                             comprehensive solution. With our extensive industry

@@ -30,7 +30,7 @@ const Navbar = () => {
                                 <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <Link to="/catalogue/wood">Catalogue</Link>
+                                <Link to="/catalogue/wall">Catalogue</Link>
                             </li>
                             <li>
                                 <Link to="/about-us">About</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
                             <i class="bi bi-chevron-right"></i>
                         </li>
                         <li className="flex justify-between items-center border-b border-gray-600 pb-2">
-                            <Link to="/catalogue">Catalogue</Link>
+                            <Link to="/catalogue/wall">Catalogue</Link>
                             <i class="bi bi-chevron-right"></i>
                         </li>
                         <li className="flex justify-between items-center border-b border-gray-600 pb-2">

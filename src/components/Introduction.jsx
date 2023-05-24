@@ -21,7 +21,7 @@ const Introduction = () => {
                 <div className="max-w-4xl flex flex-col gap-16">
                     {/* first part */}
                     <div className="text-justify">
-                        <h2 className="font-hero text-2xl md:text-3xl font-medium">
+                        <h2 className="font-hero text-2xl md:text-3xl font-medium text-left md:text-justify">
                             Great design is a solution to a problem
                         </h2>
                         <p className="mt-6 text-lg md:text-xl">
@@ -32,7 +32,7 @@ const Introduction = () => {
                     </div>
                     {/* second part */}
                     <div className="text-justify">
-                        <h2 className="font-hero text-2xl md:text-3xl font-medium">
+                        <h2 className="font-hero text-2xl md:text-3xl font-medium text-left md:text-justify">
                             With Glazeline, you can design your perfect space
                         </h2>
                         <p className="mt-6 text-lg md:text-xl">
