@@ -1,21 +1,35 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 // import styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
+
 // import images
-import img1 from "../assets/our_gallery/1.jpg";
-import img2 from "../assets/our_gallery/2.jpg";
-import img3 from "../assets/our_gallery/3.jpg";
-import img4 from "../assets/our_gallery/4.jpg";
-import img5 from "../assets/our_gallery/5.jpg";
-import img6 from "../assets/our_gallery/6.jpg";
-import img7 from "../assets/our_gallery/7.jpg";
-import img8 from "../assets/our_gallery/8.jpg";
+import img1 from "../assets/gallery/1.jpg";
+import img2 from "../assets/gallery/2.jpg";
+import img3 from "../assets/gallery/3.jpg";
+import img4 from "../assets/gallery/4.jpg";
+import img5 from "../assets/gallery/5.jpg";
+import img6 from "../assets/gallery/6.jpg";
+import img7 from "../assets/gallery/7.jpg";
+import img8 from "../assets/gallery/8.jpg";
 
 const Gallery = () => {
+    const imgArray = [img1, img2, img3, img4, img5, img6, img7, img8];
+    let galleryArray = [];
+    for (let i = 1; i <= 8; i++) {
+        galleryArray.push(
+            <SwiperSlide key={i}>
+                <img
+                    src={imgArray[i - 1]}
+                    alt={`Glazeline gallery picture ${i}`}
+                />
+            </SwiperSlide>
+        );
+    }
     return (
         <section className="fade-in bg-gray-100 px-2 md:px-4 py-20 md:py-28">
             <div className="max-w-7xl mx-auto">
@@ -40,7 +54,7 @@ const Gallery = () => {
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
-                      }}
+                    }}
                     pagination={{
                         clickable: true,
                     }}
@@ -48,30 +62,7 @@ const Gallery = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <img src={img1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img2} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img3} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img4} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img5} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img6} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img7} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img8} alt="" />
-                    </SwiperSlide>
+                    {galleryArray}
                 </Swiper>
             </div>
         </section>

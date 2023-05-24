@@ -1,23 +1,21 @@
 import React from "react";
-import logo from "../assets/logo.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import hero1 from "../assets/old/1.png";
-// import hero2 from "../assets/old/6.jpg";
-import hero1 from "../assets/hero_section/slider/1.jpg";
-import hero2 from "../assets/hero_section/slider/2.jpg";
-import hero3 from "../assets/hero_section/slider/3.jpg";
-import hero4 from "../assets/hero_section/slider/4.jpg";
-import hero5 from "../assets/hero_section/slider/5.jpg";
-import hero6 from "../assets/hero_section/slider/6.jpg";
-import hero7 from "../assets/hero_section/photo_2.png";
+import { Autoplay, Pagination } from "swiper";
+import { hideMenu } from "./CommonFunctions";
 
-// Import Swiper styles
+// import styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import required modules
-import { Autoplay, Pagination } from "swiper";
-import { hideMenu } from "./CommonFunctions";
+// import images
+import logo from "../assets/hero/hero-logo.svg";
+import hero2 from "../assets/hero/hero-2.png";
+import slide1 from "../assets/hero/slider/1.jpg";
+import slide2 from "../assets/hero/slider/2.jpg";
+import slide3 from "../assets/hero/slider/3.jpg";
+import slide4 from "../assets/hero/slider/4.jpg";
+import slide5 from "../assets/hero/slider/5.jpg";
+import slide6 from "../assets/hero/slider/6.jpg";
 
 const Hero = () => {
     return (
@@ -39,43 +37,43 @@ const Hero = () => {
                 >
                     <SwiperSlide>
                         <img
-                            src={hero1}
-                            alt="Home Interior"
+                            src={slide1}
+                            alt="Home Interior Glazeline"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src={hero2}
-                            alt="Home Interior"
+                            src={slide2}
+                            alt="Home Interior Glazeline-2"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src={hero3}
-                            alt="Home Interior"
+                            src={slide3}
+                            alt="Home Interior Glazeline-3"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-center"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src={hero4}
-                            alt="Home Interior"
+                            src={slide4}
+                            alt="Home Interior Glazeline-4"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src={hero5}
-                            alt="Home Interior"
+                            src={slide5}
+                            alt="Home Interior Glazeline-5"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src={hero6}
-                            alt="Home Interior"
+                            src={slide6}
+                            alt="Home Interior Glazeline-6"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
                         />
                     </SwiperSlide>
@@ -94,7 +92,7 @@ const Hero = () => {
                     </h1>
                 </div>
             </div>
-            {/* first row */}
+            {/* second row */}
             <div className="flex items-center flex-col-reverse md:flex-row">
                 <div className="h-[calc(50vh-80.5px)] md:h-[calc(50vh-34.5px)] md:w-1/2 flex flex-col justify-center items-center px-4 md:px-12">
                     <h2 className="font-hero text-xl md:text-2xl font-medium text-center">
@@ -102,13 +100,13 @@ const Hero = () => {
                     </h2>
                     <img
                         src={logo}
-                        alt="GlazeLine"
+                        alt="Glazeline"
                         className="w-[calc(100vw-80px)] md:w-4/6 mt-4 invert"
                     />
                 </div>
                 <img
-                    src={hero7}
-                    alt="Home Interior"
+                    src={hero2}
+                    alt="Glazeline logo"
                     className="hidden md:block w-full md:w-1/2 h-[calc(50vh-34.5px)] object-cover object-top"
                 />
             </div>
@@ -117,9 +115,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-    /* <img src={hero2} alt="" width="100%" /> */
-}
-{
-}

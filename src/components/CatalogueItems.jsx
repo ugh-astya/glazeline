@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
+
+// import styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -21,7 +22,7 @@ const WoodImages = ({}) => {
                 <img
                     className="h-[calc(100vh-161px)] object-contain"
                     src={`/catalogue-images/wooden-images/${counter}${i}.jpg`}
-                    alt={`Slide ${i}`}
+                    alt={`Wood slide ${i}`}
                 />
             </SwiperSlide>
         );
@@ -61,7 +62,7 @@ const FloorImages = ({}) => {
                 <img
                     className="h-[calc(100vh-161px)] object-contain"
                     src={`/catalogue-images/floor-images/${i}.jpg`}
-                    alt={`Slide ${i}`}
+                    alt={`Floor slide ${i}`}
                 />
             </SwiperSlide>
         );
@@ -101,7 +102,7 @@ const CommImages = ({}) => {
                 <img
                     className="h-[calc(100vh-161px)] object-contain"
                     src={`/catalogue-images/commercial-images/${i}.jpg`}
-                    alt={`Slide ${i}`}
+                    alt={`Commercial slide ${i}`}
                 />
             </SwiperSlide>
         );
@@ -141,7 +142,7 @@ const WallImages = ({}) => {
                 <img
                     className="h-[calc(100vh-161px)] object-contain"
                     src={`/catalogue-images/wall-images/${i}.jpg`}
-                    alt={`Slide ${i}`}
+                    alt={`Wall slide ${i}`}
                 />
             </SwiperSlide>
         );

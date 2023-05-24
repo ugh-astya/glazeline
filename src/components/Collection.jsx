@@ -1,9 +1,11 @@
 import React from "react";
-import abt1 from "../assets/collection/cropped/wall.png";
-import abt2 from "../assets/collection/cropped/wood.png";
-import abt3 from "../assets/collection/cropped/floor.png";
-import abt4 from "../assets/collection/cropped/commercial.png";
 import CollectionItem from "./CollectionItem";
+
+// import images
+import coll1 from "../assets/collection/wall.png";
+import coll2 from "../assets/collection/wood.png";
+import coll3 from "../assets/collection/floor.png";
+import coll4 from "../assets/collection/commercial.png";
 
 const Collection = () => {
     return (
@@ -24,7 +26,7 @@ const Collection = () => {
                 {/* collections */}
                 <div className="flex flex-col gap-12">
                     <CollectionItem
-                        image={abt1}
+                        image={coll1}
                         id="wall"
                         title="Wall Tiles"
                         alignment="left"
@@ -37,7 +39,7 @@ const Collection = () => {
                             everyone."
                     />
                     <CollectionItem
-                        image={abt2}
+                        image={coll2}
                         id="wood"
                         title="Wood Flooring"
                         alignment="right"
@@ -49,7 +51,7 @@ const Collection = () => {
                         no two floors will be the same."
                     />
                     <CollectionItem
-                        image={abt3}
+                        image={coll3}
                         id="floor"
                         title="Floor Tiles"
                         alignment="left"
@@ -62,7 +64,7 @@ const Collection = () => {
                         slip-resistant and carpet-flooring."
                     />
                     <CollectionItem
-                        image={abt4}
+                        image={coll4}
                         id="comm"
                         title="Commercial Spaces"
                         alignment="right"

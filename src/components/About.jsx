@@ -1,13 +1,15 @@
 import React from "react";
+import Gallery from "./Gallery";
+import { DidMount } from "./CommonFunctions";
+
+// import images
 import top from "../assets/about-us/top.jpg";
-import scene1 from "../assets/about-us/1.jpg";
-import scene2 from "../assets/about-us/2.jpg";
-import scene3 from "../assets/about-us/3.jpg";
 import abt1 from "../assets/about-us/pottery.jpg";
 import abt2 from "../assets/about-us/about_sophia.png";
 import abt3 from "../assets/about-us/handshake.png";
-import Gallery from "./Gallery";
-import { DidMount } from "./CommonFunctions";
+import scene1 from "../assets/about-us/1.jpg";
+import scene2 from "../assets/about-us/2.jpg";
+import scene3 from "../assets/about-us/3.jpg";
 
 const About = () => {
     return (
@@ -22,7 +24,7 @@ const About = () => {
                     {/* about glazeline */}
                     <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20">
                         <div className="hidden w-2/6 md:flex items-center">
-                            <img src={abt1} alt="Home Interior" className="" />
+                            <img src={abt1} alt="About GlazeLine" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
                             <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
@@ -55,7 +57,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="hidden w-1/6 md:flex justify-end">
-                            <img src={scene1} alt="" />
+                            <img src={scene1} alt="Design" />
                         </div>
                     </div>
                     {/* our founder */}
@@ -64,7 +66,7 @@ const About = () => {
                             Our Founder
                         </h1>
                         <div className="md:w-2/6 flex items-center justify-end">
-                            <img src={abt2} alt="Home Interior" className="" />
+                            <img src={abt2} alt="Sophia Singh" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
                             <h1 className="hidden md:block uppercase font-semibold text-2xl md:text-3xl tracking-widest">
@@ -90,18 +92,14 @@ const About = () => {
                             </p>
                         </div>
                         <div className="hidden w-1/6 md:block">
-                            <img src={scene2} alt="" />
+                            <img src={scene2} alt="Design" />
                         </div>
                     </div>
                     {/* our values */}
                     <div>
                         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20">
                             <div className="md:w-2/6 flex items-center">
-                                <img
-                                    src={abt3}
-                                    alt="Home Interior"
-                                    className=""
-                                />
+                                <img src={abt3} alt="Handshake" />
                             </div>
                             <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
                                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest text-left">
@@ -141,7 +139,7 @@ const About = () => {
                         </div>
                         <div className="hidden md:flex justify-end">
                             <div className="w-2/6 flex justify-end">
-                                <img src={scene3} alt="" />
+                                <img src={scene3} alt="Design" />
                             </div>
                         </div>
                     </div>

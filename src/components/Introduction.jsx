@@ -2,21 +2,21 @@ import React from "react";
 import { Waypoint } from "react-waypoint";
 
 const Introduction = () => {
-    function EntryHandle() {
+    function entryHandle() {
         let elem = document.getElementById("intro");
         elem.classList.add("tiles-back");
         elem.classList.add("actAnim");
     }
-    function LeaveHandle() {
+    function exitHandle() {
         let elem = document.getElementById("intro");
         elem.classList.remove("tiles-back");
         elem.classList.remove("actAnim");
     }
     return (
-        <Waypoint onEnter={EntryHandle} onLeave={LeaveHandle} bottomOffset="1%">
+        <Waypoint onEnter={entryHandle} onLeave={exitHandle} bottomOffset="1%">
             <div
                 id="intro"
-                className="bg-gray-100 flex items-center justify-center px-8 md:px-4 py-20 md:py-28"
+                className="fade-in bg-gray-100 flex items-center justify-center px-8 md:px-4 py-20 md:py-28"
             >
                 <div className="max-w-4xl flex flex-col gap-16">
                     {/* first part */}
@@ -70,7 +70,7 @@ const Introduction = () => {
                                 rel="noopener noreferrer"
                                 className="bg-gray-200 px-2 py-0.5 rounded"
                             >
-                                <i class="bi bi-whatsapp mr-1"></i>WhatsApp
+                                <i className="bi bi-whatsapp mr-1"></i>WhatsApp
                             </a>{" "}
                             to book a consultation session today.
                         </p>

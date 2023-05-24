@@ -1,10 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 // import styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
+
 // import images
 import img1 from "../assets/carousel/1.jpg";
 import img2 from "../assets/carousel/2.jpg";
@@ -18,8 +20,32 @@ import img9 from "../assets/carousel/9.jpg";
 import img10 from "../assets/carousel/10.jpg";
 
 const Carousel = () => {
+    const imgArray = [
+        img1,
+        img2,
+        img3,
+        img4,
+        img5,
+        img6,
+        img7,
+        img8,
+        img9,
+        img10,
+    ];
+    let carouselArray = [];
+    for (let i = 1; i <= 10; i++) {
+        carouselArray.push(
+            <SwiperSlide key={i}>
+                <img
+                    src={imgArray[i-1]}
+                    alt={`Tiles Carousel Picture ${i}`}
+                    className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
+                />
+            </SwiperSlide>
+        );
+    }
     return (
-        <div className="hidden md:block h-[calc(100vh-69px)] bg-red-100">
+        <div className="fade-in hidden md:block h-[calc(100vh-69px)]">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
@@ -35,76 +61,7 @@ const Carousel = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <img
-                        src={img1}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img2}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img3}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img4}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img5}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img6}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img7}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img8}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img9}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img
-                        src={img10}
-                        alt=""
-                        className="object-cover h-[calc(100vh-69px)] w-screen object-bottom overflow-hidden"
-                    />
-                </SwiperSlide>
+                {carouselArray}
             </Swiper>
         </div>
     );

@@ -1,14 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 
-const CollectionItem = ({
-    id,
-    image,
-    title,
-    description,
-    target,
-    alignment,
-}) => {
+const CollectionItem = ({ id, image, title, description, alignment }) => {
     let rowReverse = "";
     let itemsEnd = "";
     if (alignment === "right") {
@@ -17,13 +11,12 @@ const CollectionItem = ({
     } else {
         rowReverse = "md:flex-row";
     }
-
     return (
         <div className={`flex gap-12 flex-col ${rowReverse}`}>
             <Link to={`/catalogue/${id}`} className="md:w-1/2 w-full">
                 <img
                     src={image}
-                    alt="Home Interior"
+                    alt={`${id} tiles`}
                     className="object-cover object-bottom hover:scale-110 transition-transform duration-300"
                 />
             </Link>
@@ -35,16 +28,10 @@ const CollectionItem = ({
                     {description}
                 </p>
                 <div className="mt-5">
-                    <Link
-                        to={`/catalogue/${id}`}
-                        // className="bg-black text-white uppercase py-2 px-4"
-                    >
-                        {/* Explore <i className="bi bi-arrow-right ml-2"></i> */}
+                    <Link to={`/catalogue/${id}`}>
                         <button className="btn">
-                            <span>
-                                {" "}
-                                Explore{" "}
-                                <i className="bi bi-arrow-right ml-2"></i>
+                            <span className="flex items-center">
+                                Explore <BsArrowRight className="ml-2" />
                             </span>
                         </button>
                     </Link>

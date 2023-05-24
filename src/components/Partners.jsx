@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+// import images
 import partner1 from "../assets/partners/blackberry.png";
 import partner2 from "../assets/partners/creanza.png";
 import partner3 from "../assets/partners/essel.png";
@@ -23,7 +24,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner1}
-                                alt=""
+                                alt="Blackberry"
                                 className="border border-gray-200 p-1"
                             />
                         </a>
@@ -34,7 +35,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner2}
-                                alt=""
+                                alt="Creanza"
                                 className="border border-gray-200 p-1"
                             />
                         </a>
@@ -45,7 +46,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner3}
-                                alt=""
+                                alt="Essel"
                                 className="border border-gray-200 p-1"
                             />
                         </a>
@@ -56,7 +57,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner4}
-                                alt=""
+                                alt="Somany"
                                 className="border border-gray-200 p-1"
                             />
                         </a>
@@ -67,7 +68,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner5}
-                                alt=""
+                                alt="Tesa"
                                 className="border border-gray-200 p-1"
                             />
                         </a>
@@ -78,7 +79,7 @@ const Partners = () => {
                         >
                             <img
                                 src={partner6}
-                                alt=""
+                                alt="Welspun"
                                 className="border border-gray-200 p-1"
                             />
                         </a>

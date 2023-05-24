@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useParams } from "react-router-dom";
-import Contact from "./Contact";
 import { DidMount } from "./CommonFunctions";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Contact from "./Contact";
 import {
     WoodImages,
     FloorImages,
@@ -14,6 +13,7 @@ import {
 const Catalogue = () => {
     let { id } = useParams();
     let defInd = 0;
+    // set the active tab index
     if (id === "wood") {
         defInd = 1;
     } else if (id === "floor") {
@@ -63,16 +63,6 @@ const Catalogue = () => {
                             <CommImages />
                         </TabPanel>
                     </Tabs>
-                    {/* <p className="mt-8 text-lg md:text-xl">
-                        Found something you like? Drop us a call at{" "}
-                        <Link
-                            to="tel:+917000588373"
-                            className="font-semibold text-blue-800"
-                        >
-                            +91-700-058-8373
-                        </Link>
-                        .
-                    </p> */}
                 </div>
             </div>
             <Contact title="Found Something You Like?" tag="catalogue" />

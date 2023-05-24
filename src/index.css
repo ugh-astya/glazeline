@@ -1,66 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap");
 /* tailwindcss */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .snap {
-        scroll-snap-type: var(--scroll-snap-direction)
-            var(--scroll-snap-constraint);
-    }
-    .snap-y {
-        --scroll-snap-direction: y;
-    }
-    .snap-mandatory {
-        --scroll-snap-constraint: mandatory;
-    }
-    .snap-start {
-        scroll-snap-align: start;
-    }
-}
-
-/* general css */
 /* custom font */
 @font-face {
     font-family: andine;
-    src: url(/andine/Andine.woff);
+    src: url(/fonts/andine/Andine.woff);
 }
 @font-face {
     font-family: louis;
-    src: url(/louis_george_caf/louis.ttf);
+    src: url(/fonts/louis_george_caf/louis.ttf);
 }
 @font-face {
     font-family: vogue;
-    src: url(/vogue/Vogue.ttf);
+    src: url(/fonts/vogue/Vogue.ttf);
 }
+/* end of custom font */
+
+/* general css */
 body {
-    box-sizing: border-box;
-    /* width: 100%;
-    overflow-x: hidden; */
-    @apply bg-white;
-    @apply text-black;
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /* background-color: #ffdee9;
-    background-image: linear-gradient(105deg, #ffdee9 0%, #defffe 100%); */
-    /* background-color: #c7d2fe;
-    background-image: linear-gradient(105deg, #c7d2fe 0%, #defffe 100%); */
 }
-.boxShadow {
-    box-shadow: 0px 0px 60px #acacac;
+.lineHeight145rem {
+    line-height: 1.45rem !important;
 }
-.active {
-    @apply border-white;
-    @apply text-yellow-100;
+/* end of general css */
+
+/* catalogue styles */
+.react-tabs__tab--selected {
+    @apply border-b border-black;
 }
+/* end of catalogue styles */
+
 /* animations */
-.fade-in {
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -69,26 +44,7 @@ body {
         opacity: 1;
     }
 }
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 12px;
-    height: 4px;
-    /* display: none; */
-}
-::-webkit-scrollbar-thumb {
-    @apply bg-gray-500;
-}
-::-webkit-scrollbar-track {
-    background-color: #ffffff;
-}
-.lineHeight145rem {
-    line-height: 1.45rem !important;
-}
-.react-tabs__tab--selected {
-    @apply border-b border-black;
-}
-
-@keyframes animatedBird {
+@keyframes topDownTiles {
     from {
         background-position: left -19vw bottom -30vw, right -18vw bottom 50vw;
     }
@@ -96,32 +52,36 @@ body {
         background-position: left -19vw bottom 0, right -18vw bottom 5vw;
     }
 }
+.fade-in {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 @media only screen and (min-width: 1210px) {
     .tiles-back {
-        background: url(/tiles_gray.png) left -19vw bottom 0 no-repeat,
-            url(/tiles.png) right -18vw bottom 5vw no-repeat;
+        background: url(/background-images/tiles_gray.png) left -19vw bottom 0 no-repeat,
+            url(/background-images/tiles.png) right -18vw bottom 5vw no-repeat;
         background-color: #f3f4f6;
     }
-
     .actAnim {
-        animation: animatedBird 1s linear 1;
+        animation: topDownTiles 1s linear 1;
     }
 }
+/* end of animations */
 
+/* button styles */
+/* whatsapp button */
 .cssbuttons-io {
     @apply relative border border-white uppercase px-4 py-1 overflow-hidden hover:border-transparent hover:text-black;
     background-color: #25d366;
 }
-
 .cssbuttons-io span {
     @apply relative z-10 inline-flex items-center transition-colors duration-300;
 }
-
 .cssbuttons-io::before,
 .cssbuttons-io::after {
     @apply absolute top-0 left-0 w-full h-full z-0;
 }
-
 .cssbuttons-io::before {
     content: "";
     background: #000;
@@ -130,15 +90,13 @@ body {
     transform: skew(30deg);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-
 .cssbuttons-io:hover::before {
     transform: translate3d(100%, 0, 0);
 }
-
 .cssbuttons-io:active {
     transform: scale(0.95);
 }
-
+/* collection buttons */
 .btn {
     @apply border border-black px-4 py-1 overflow-hidden uppercase bg-black text-white hover:text-black;
     text-decoration: none;
@@ -146,7 +104,6 @@ body {
     transition: all 1s;
     z-index: 50;
 }
-
 .btn::before {
     content: "";
     position: absolute;
@@ -162,3 +119,17 @@ body {
 .btn:hover::before {
     width: 160%;
 }
+/* end of button styles */
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-500;
+}
+::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+}
+/* end of scrollbar */

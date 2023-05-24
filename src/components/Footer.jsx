@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/glazeline_logo.svg";
+
+// import image
+import logo from "../assets/glazeline-logo.svg";
 
 const Footer = () => {
     return (

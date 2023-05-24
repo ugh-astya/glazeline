@@ -1,7 +1,6 @@
 !**/glob-import/dir/node_modules
 .DS_Store
 .idea
-*.pdf
 *.cpuprofile
 *.local
 *.log

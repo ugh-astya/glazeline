@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ title, desc, tag }) => {
+    // use emailjs for react
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -49,7 +49,7 @@ const Contact = ({ title, desc, tag }) => {
                                 rel="noopener noreferrer"
                                 className="bg-gray-200 px-2 py-0.5 rounded"
                             >
-                                <i class="bi bi-whatsapp mr-1"></i>WhatsApp
+                                <i className="bi bi-whatsapp mr-1"></i>WhatsApp
                             </a>{" "}
                         </p>
                     ) : (
