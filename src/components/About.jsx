@@ -13,11 +13,15 @@ const About = () => {
     return (
         <>
             <section onLoad={DidMount} className="fade-in">
-                <img src={top} alt="Glazeline" width="100%" />
-                <div className="flex flex-col my-16 md:my-24 gap-16 md:gap-24">
+                <img
+                    src={top}
+                    alt="Glazeline"
+                    className="h-[22vh] md:h-full w-full object-cover object-right"
+                />
+                <div className="flex flex-col my-16 md:my-24 gap-12 md:gap-24 px-8 md:px-0">
                     {/* about glazeline */}
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-20">
-                        <div className="md:w-2/6 flex items-center">
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20">
+                        <div className="hidden w-2/6 md:flex items-center">
                             <img src={abt1} alt="Home Interior" className="" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
@@ -50,17 +54,20 @@ const About = () => {
                                 reflections of their personal style and vision.
                             </p>
                         </div>
-                        <div className="w-1/6 flex justify-end">
+                        <div className="hidden w-1/6 md:flex justify-end">
                             <img src={scene1} alt="" />
                         </div>
                     </div>
                     {/* our founder */}
-                    <div className="flex flex-col md:flex-row-reverse justify-center items-center gap-20">
+                    <div className="flex flex-col md:flex-row-reverse justify-center items-center gap-6 md:gap-20">
+                        <h1 className="flex md:hidden self-start uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                            Our Founder
+                        </h1>
                         <div className="md:w-2/6 flex items-center justify-end">
                             <img src={abt2} alt="Home Interior" className="" />
                         </div>
                         <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
-                            <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                            <h1 className="hidden md:block uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                                 Our Founder
                             </h1>
                             <p>
@@ -82,13 +89,13 @@ const About = () => {
                                 Housing.
                             </p>
                         </div>
-                        <div className="w-1/6">
+                        <div className="hidden w-1/6 md:block">
                             <img src={scene2} alt="" />
                         </div>
                     </div>
                     {/* our values */}
                     <div>
-                        <div className="flex flex-col md:flex-row justify-center items-center gap-20">
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20">
                             <div className="md:w-2/6 flex items-center">
                                 <img
                                     src={abt3}
@@ -130,9 +137,9 @@ const About = () => {
                                     reality.
                                 </p>
                             </div>
-                            <div className="w-1/6"></div>
+                            <div className="hidden w-1/6 md:block"></div>
                         </div>
-                        <div className="flex justify-end">
+                        <div className="hidden md:flex justify-end">
                             <div className="w-2/6 flex justify-end">
                                 <img src={scene3} alt="" />
                             </div>
