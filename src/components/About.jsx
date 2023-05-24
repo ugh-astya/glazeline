@@ -104,7 +104,7 @@ const About = () => {
                                 />
                             </div>
                             <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
-                                <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                                <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest text-left">
                                     Our Value Proposition
                                 </h1>
                                 <p>
