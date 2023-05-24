@@ -31,7 +31,7 @@ const Catalogue = () => {
                     <h1 className="uppercase font-hero text-2xl md:text-3xl font-medium text-center mb-6">
                         Catalogue
                     </h1>
-                    <p className="text-lg md:text-xl text-center mb-6">
+                    <p className="text-lg md:text-xl text-center mb-6 px-4 md:px-0">
                         From wall tiles to commercial space design, from wood
                         flooring to kitchen backsplash - We've got it all!
                     </p>

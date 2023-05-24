@@ -79,11 +79,17 @@ const Navbar = () => {
                             <i class="bi bi-chevron-right"></i>
                         </li>
                         <li className="flex justify-between items-center border-b border-gray-600 pb-2">
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/#contact">Contact</Link>
                             <i class="bi bi-chevron-right"></i>
                         </li>
                         <li className="flex justify-between items-center">
-                            <Link to="/">Get a Quote</Link>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=917000588373"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="bi bi-whatsapp mr-2"></i>Message
+                            </a>
                             <i class="bi bi-chevron-right"></i>
                         </li>
                     </ul>

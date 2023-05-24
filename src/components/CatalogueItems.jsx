@@ -38,7 +38,7 @@ const WoodImages = ({}) => {
             >
                 {woodImg}
             </Swiper>
-            <div className="flex justify-end">
+            <div className="flex justify-end px-8">
                 <a
                     href="/catalogue-images/wooden.pdf"
                     className="border-b border-black"
@@ -78,7 +78,7 @@ const FloorImages = ({}) => {
             >
                 {floorImg}
             </Swiper>
-            <div className="flex justify-end">
+            <div className="flex justify-end px-8">
                 <a
                     href="/catalogue-images/floor.pdf"
                     className="border-b border-black"
@@ -118,7 +118,7 @@ const CommImages = ({}) => {
             >
                 {commImg}
             </Swiper>
-            <div className="flex justify-end">
+            <div className="flex justify-end px-8">
                 <a
                     href="/catalogue-images/commercial.pdf"
                     className="border-b border-black ml-1.5"
@@ -158,7 +158,7 @@ const WallImages = ({}) => {
             >
                 {wallImg}
             </Swiper>
-            <div className="flex justify-end">
+            <div className="flex justify-end px-8">
                 <a
                     href="/catalogue-images/wall.pdf"
                     className="border-b border-black"

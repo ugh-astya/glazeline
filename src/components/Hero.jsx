@@ -17,10 +17,11 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper";
+import { hideMenu } from "./CommonFunctions";
 
 const Hero = () => {
     return (
-        <section className="fade-in md:h-[calc(100vh-69px)]">
+        <section onLoad={hideMenu} className="fade-in md:h-[calc(100vh-69px)]">
             {/* first row */}
             <div className="flex items-center flex-col md:flex-row">
                 <Swiper
