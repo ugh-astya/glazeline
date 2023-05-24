@@ -13,7 +13,7 @@ const CollectionItem = ({
     let itemsEnd = "";
     if (alignment === "right") {
         rowReverse = "md:flex-row-reverse";
-        itemsEnd = "items-end";
+        itemsEnd = "md:items-end";
     } else {
         rowReverse = "md:flex-row";
     }

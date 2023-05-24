@@ -66,7 +66,7 @@ const Contact = ({ title, desc, tag }) => {
                             height="100%"
                             className="absolute inset-0"
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                         <div className="bg-gray-100/30 backdrop-blur-xl rounded-3xl relative flex flex-wrap py-6 shadow-md">
                             <div className="lg:w-1/2 px-6">

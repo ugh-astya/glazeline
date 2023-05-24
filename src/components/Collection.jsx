@@ -7,7 +7,7 @@ import CollectionItem from "./CollectionItem";
 
 const Collection = () => {
     return (
-        <section className="fade-in px-2 md:px-4 py-20 md:py-28">
+        <section className="fade-in px-8 md:px-4 py-20 md:py-28">
             <div className="max-w-4xl mx-auto">
                 <div className="max-w-3xl mx-auto text-center flex flex-col gap-4 mb-8 md:mb-12">
                     <p className="text-lg md:text-xl">

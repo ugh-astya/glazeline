@@ -19,7 +19,7 @@ import img10 from "../assets/carousel/10.jpg";
 
 const Carousel = () => {
     return (
-        <div className="h-[calc(100vh-69px)] bg-red-100">
+        <div className="hidden md:block h-[calc(100vh-69px)] bg-red-100">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}

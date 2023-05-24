@@ -16,7 +16,7 @@ const Introduction = () => {
         <Waypoint onEnter={EntryHandle} onLeave={LeaveHandle} bottomOffset="1%">
             <div
                 id="intro"
-                className="bg-gray-100 flex items-center justify-center px-2 md:px-4 py-20 md:py-28"
+                className="bg-gray-100 flex items-center justify-center px-8 md:px-4 py-20 md:py-28"
             >
                 <div className="max-w-4xl flex flex-col gap-16">
                     {/* first part */}

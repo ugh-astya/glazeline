@@ -79,9 +79,17 @@ const Hero = () => {
                         />
                     </SwiperSlide>
                 </Swiper>
-                <div className="md:w-1/2 flex h-[calc(50vh-34.5px)] items-center justify-end md:pl-4 md:pr-24">
-                    <h1 className="font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
+                <div className="z-10 -mt-[calc(50vh-34.5px)] md:mt-0 md:w-1/2 flex h-[calc(50vh-34.5px)] items-center justify-end md:pl-4 md:pr-24">
+                    <h1 className="hidden md:block font-hero text-2xl md:text-3xl font-medium md:text-right text-center">
                         Living spaces are a reflection <br /> of one's self
+                    </h1>
+                    <h1 className="inline-flex flex-col md:hidden font-hero text-2xl md:text-3xl font-medium md:text-right text-center px-4">
+                        <span className="backdrop-blur bg-white/80 md:bg-transparent leading-[2.395rem] md:leading-8 px-4">
+                            Living spaces are a
+                        </span>
+                        <span className="backdrop-blur bg-white/80 md:bg-transparent leading-[2.395rem] md:leading-8 px-4">
+                            reflection of one's self
+                        </span>
                     </h1>
                 </div>
             </div>
@@ -94,13 +102,13 @@ const Hero = () => {
                     <img
                         src={logo}
                         alt="GlazeLine"
-                        className="w-full md:w-4/6 mt-4 invert"
+                        className="w-[calc(100vw-80px)] md:w-4/6 mt-4 invert"
                     />
                 </div>
                 <img
                     src={hero7}
                     alt="Home Interior"
-                    className="w-full md:w-1/2 h-[calc(50vh-34.5px)] object-cover object-top"
+                    className="hidden md:block w-full md:w-1/2 h-[calc(50vh-34.5px)] object-cover object-top"
                 />
             </div>
         </section>
