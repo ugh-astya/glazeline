@@ -1,106 +1,102 @@
 import React from "react";
-import abt1 from "../assets/about_section/about_glazeline.jpg";
-import abt2 from "../assets/about_section/about_sophia.png";
-import abt3 from "../assets/about_section/our_value_proposition.jpg";
+import top from "../assets/about-us/top.jpg";
+import scene1 from "../assets/about-us/1.jpg";
+import scene2 from "../assets/about-us/2.jpg";
+import scene3 from "../assets/about-us/3.jpg";
+import abt1 from "../assets/about-us/pottery.jpg";
+import abt2 from "../assets/about-us/about_sophia.png";
+import abt3 from "../assets/about-us/handshake.png";
 import Gallery from "./Gallery";
 import { DidMount } from "./CommonFunctions";
 
 const About = () => {
     return (
         <>
-            <section
-                onLoad={DidMount}
-                className="fade-in px-2 md:px-4 py-12 md:py-20"
-            >
-                <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col gap-16 md:gap-24">
-                        {/* about glazeline */}
-                        <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
-                            <div className="md:w-1/2 flex justify-center items-center">
-                                <img
-                                    src={abt1}
-                                    alt="Home Interior"
-                                    className=""
-                                />
-                            </div>
-                            <div className="md:w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
-                                <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
-                                    About GlazeLine
-                                </h1>
-                                <p>
-                                    Our name, Glazeline, holds significant
-                                    meaning in the tile industry and perfectly
-                                    embodies our commitment to quality,
-                                    innovation, and customer satisfaction. At
-                                    the core of our business is the profound
-                                    understanding of ceramic glaze, a vital
-                                    element in the production of stunning tiles
-                                    and sanitaryware. Glaze is a liquid coating
-                                    applied to the surface of ceramic products,
-                                    transforming them into vibrant, durable, and
-                                    visually captivating pieces of art. It adds
-                                    depth, texture, and character, enhancing the
-                                    overall aesthetic appeal of each tile. Just
-                                    as an assembly line streamlines the
-                                    manufacturing process, a Glazeline
-                                    represents the epitome of efficiency and
-                                    expertise in the tile industry.
-                                </p>
-                                <p>
-                                    However, Glazeline isn't solely about
-                                    offering a remarkable line of tile products.
-                                    We take great pride in our comprehensive
-                                    interior design consultancy services,
-                                    guiding our clients in transforming their
-                                    spaces into stunning reflections of their
-                                    personal style and vision.
-                                </p>
-                            </div>
+            <section onLoad={DidMount} className="fade-in">
+                <img src={top} alt="Glazeline" width="100%" />
+                <div className="flex flex-col my-16 md:my-24 gap-16 md:gap-24">
+                    {/* about glazeline */}
+                    <div className="flex flex-col md:flex-row justify-center items-center">
+                        <div className="md:w-2/6 flex items-center pr-12">
+                            <img src={abt1} alt="Home Interior" className="" />
                         </div>
-                        {/* our founder */}
-                        <div className="flex gap-12 flex-col md:flex-row-reverse justify-center items-center">
-                            <div className="md:w-1/2 flex justify-center items-center">
-                                <img
-                                    src={abt2}
-                                    alt="Home Interior"
-                                    className=""
-                                />
-                            </div>
-                            <div className="md:w-1/2 flex flex-col md:items-end gap-6 text-lg md:text-xl text-justify">
-                                <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
-                                    Our Founder
-                                </h1>
-                                <p>
-                                    Meet Sophia Singh, the founder of Glazeline,
-                                    whose passion and expertise has shaped the
-                                    very essence of the business. With over 20
-                                    years of invaluable industry experience,
-                                    Sophia has honed her skills and mastered
-                                    every aspect of the tile industry, leaving
-                                    an indelible mark on esteemed companies such
-                                    as Somany Ceramics, RAK Ceramics, and
-                                    Wipro's Goldcoin. Where she has held various
-                                    pivotal roles in product development and
-                                    marketing to showroom executive and design
-                                    development. Her proficiency extends to
-                                    setting up new showrooms, coordinating with
-                                    dealers, and spearheading business
-                                    development initiatives for prestigious
-                                    government clients like PWD, Military
-                                    Engineering Services, MP and Police Housing.
-                                </p>
-                            </div>
+                        <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
+                            <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                                About GlazeLine
+                            </h1>
+                            <p>
+                                Our name, Glazeline, holds significant meaning
+                                in the tile industry and perfectly embodies our
+                                commitment to quality, innovation, and customer
+                                satisfaction. At the core of our business is the
+                                profound understanding of ceramic glaze, a vital
+                                element in the production of stunning tiles and
+                                sanitaryware. Glaze is a liquid coating applied
+                                to the surface of ceramic products, transforming
+                                them into vibrant, durable, and visually
+                                captivating pieces of art. It adds depth,
+                                texture, and character, enhancing the overall
+                                aesthetic appeal of each tile. Just as an
+                                assembly line streamlines the manufacturing
+                                process, a Glazeline represents the epitome of
+                                efficiency and expertise in the tile industry.
+                            </p>
+                            <p>
+                                However, Glazeline isn't solely about offering a
+                                remarkable line of tile products. We take great
+                                pride in our comprehensive interior design
+                                consultancy services, guiding our clients in
+                                transforming their spaces into stunning
+                                reflections of their personal style and vision.
+                            </p>
                         </div>
-                        {/* our founder */}
-                        <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
-                            <div className="md:w-1/2 flex justify-center items-center">
+                        <div className="w-1/6">
+                            <img src={scene1} alt="" />
+                        </div>
+                    </div>
+                    {/* our founder */}
+                    <div className="flex flex-col md:flex-row-reverse justify-center items-center">
+                        <div className="md:w-2/6 flex items-center pl-12">
+                            <img src={abt2} alt="Home Interior" className="" />
+                        </div>
+                        <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
+                            <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
+                                Our Founder
+                            </h1>
+                            <p>
+                                Meet Sophia Singh, the founder of Glazeline,
+                                whose passion and expertise has shaped the very
+                                essence of the business. With over 20 years of
+                                invaluable industry experience, Sophia has honed
+                                her skills and mastered every aspect of the tile
+                                industry, leaving an indelible mark on esteemed
+                                companies such as Somany Ceramics, RAK Ceramics,
+                                and Wipro's Goldcoin. Where she has held various
+                                pivotal roles in product development and
+                                marketing to showroom executive and design
+                                development. Her proficiency extends to setting
+                                up new showrooms, coordinating with dealers, and
+                                spearheading business development initiatives
+                                for prestigious government clients like PWD,
+                                Military Engineering Services, MP and Police
+                                Housing.
+                            </p>
+                        </div>
+                        <div className="w-1/6">
+                            <img src={scene2} alt="" />
+                        </div>
+                    </div>
+                    {/* our values */}
+                    <div>
+                        <div className="flex flex-col md:flex-row justify-center items-center">
+                            <div className="md:w-2/6 flex items-center pr-12">
                                 <img
                                     src={abt3}
                                     alt="Home Interior"
                                     className=""
                                 />
                             </div>
-                            <div className="md:w-1/2 flex flex-col gap-6 text-lg md:text-xl text-justify">
+                            <div className="md:w-3/6 flex flex-col gap-6 text-lg md:text-xl text-justify">
                                 <h1 className="uppercase font-semibold text-2xl md:text-3xl tracking-widest">
                                     Our Value Proposition
                                 </h1>
@@ -133,6 +129,12 @@ const About = () => {
                                     inspire you and turn your dreams into
                                     reality.
                                 </p>
+                            </div>
+                            <div className="w-1/6"></div>
+                        </div>
+                        <div className="flex justify-end">
+                            <div className="w-2/6">
+                                <img src={scene3} alt="" />
                             </div>
                         </div>
                     </div>
