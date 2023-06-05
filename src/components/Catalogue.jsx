@@ -8,6 +8,8 @@ import {
     FloorImages,
     CommImages,
     WallImages,
+    BathImages,
+    IndImages,
 } from "./CatalogueItems";
 
 const Catalogue = () => {
@@ -20,6 +22,10 @@ const Catalogue = () => {
         defInd = 2;
     } else if (id === "comm") {
         defInd = 3;
+    } else if (id === "bathroom") {
+        defInd = 4;
+    } else if (id === "carpeting") {
+        defInd = 5;
     }
     return (
         <>
@@ -36,7 +42,7 @@ const Catalogue = () => {
                         flooring to kitchen backsplash - We've got it all!
                     </p>
                     <Tabs className="Tabs" defaultIndex={defInd}>
-                        <TabList className="grid grid-cols-2 md:grid-cols-4 gap-4 font-semibold md:text-lg text-center uppercase tracking-[0.2em]">
+                        <TabList className="grid grid-cols-2 md:grid-cols-3 gap-4 font-semibold md:text-lg text-center uppercase tracking-[0.2em]">
                             <Tab className="outline-none inline-block cursor-pointer pb-2">
                                 Wall Tiles
                             </Tab>
@@ -48,6 +54,12 @@ const Catalogue = () => {
                             </Tab>
                             <Tab className="outline-none inline-block cursor-pointer pb-2">
                                 Commercial Spaces
+                            </Tab>
+                            <Tab className="outline-none inline-block cursor-pointer pb-2">
+                                Bathroom Fittings
+                            </Tab>
+                            <Tab className="outline-none inline-block cursor-pointer pb-2">
+                                Industrial Carpeting
                             </Tab>
                         </TabList>
                         <TabPanel>
@@ -61,6 +73,12 @@ const Catalogue = () => {
                         </TabPanel>
                         <TabPanel>
                             <CommImages />
+                        </TabPanel>
+                        <TabPanel>
+                            <BathImages />
+                        </TabPanel>
+                        <TabPanel>
+                            <IndImages />
                         </TabPanel>
                     </Tabs>
                 </div>

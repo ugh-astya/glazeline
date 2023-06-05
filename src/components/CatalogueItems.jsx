@@ -173,4 +173,90 @@ const WallImages = ({}) => {
     );
 };
 
-export { WoodImages, FloorImages, CommImages, WallImages };
+// bathroom images
+const BathImages = ({}) => {
+    let bathImg = [];
+    for (let i = 0; i <= 19; i++) {
+        bathImg.push(
+            <SwiperSlide key={`slide-${i}`} className="flex justify-center">
+                <img
+                    className="h-[calc(100vh-161px)] object-contain"
+                    src={`/catalogue-images/bathroom-fittings/${i}.jpg`}
+                    alt={`Bathroom slide ${i}`}
+                />
+            </SwiperSlide>
+        );
+    }
+    return (
+        <div className="max-w-2xl mx-auto">
+            <Swiper
+                pagination={{
+                    type: "fraction",
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper h-[calc(100vh-161px)] my-4"
+            >
+                {bathImg}
+            </Swiper>
+            <div className="flex justify-end px-8">
+                <a
+                    href="/catalogue-images/bathroom.pdf"
+                    className="border-b border-black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Download the full catalogue
+                </a>
+            </div>
+        </div>
+    );
+};
+// industrial carpeting images
+const IndImages = ({}) => {
+    let indImg = [];
+    for (let i = 0; i <= 19; i++) {
+        indImg.push(
+            <SwiperSlide key={`slide-${i}`} className="flex justify-center">
+                <img
+                    className="h-[calc(100vh-161px)] object-contain"
+                    src={`/catalogue-images/industrial-carpeting/${i}.jpg`}
+                    alt={`Carpet slide ${i}`}
+                />
+            </SwiperSlide>
+        );
+    }
+    return (
+        <div className="max-w-2xl mx-auto">
+            <Swiper
+                pagination={{
+                    type: "fraction",
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper h-[calc(100vh-161px)] my-4"
+            >
+                {indImg}
+            </Swiper>
+            <div className="flex justify-end px-8">
+                <a
+                    href="/catalogue-images/carpet.pdf"
+                    className="border-b border-black"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Download the full catalogue
+                </a>
+            </div>
+        </div>
+    );
+};
+
+export {
+    WoodImages,
+    FloorImages,
+    CommImages,
+    WallImages,
+    BathImages,
+    IndImages,
+};

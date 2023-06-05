@@ -6,6 +6,7 @@ import coll1 from "../assets/collection/wall.png";
 import coll2 from "../assets/collection/wood.png";
 import coll3 from "../assets/collection/floor.png";
 import coll4 from "../assets/collection/commercial.png";
+import coll5 from "../assets/collection/bathroom.webp";
 
 const Collection = () => {
     return (
@@ -73,6 +74,13 @@ const Collection = () => {
                         a wide selection of styles, whether you want marble,
                         stone or concrete-finish tiles, we have an option
                         for you."
+                    />
+                    <CollectionItem
+                        image={coll5}
+                        id="bathroom"
+                        title="Bathroom Fittings"
+                        alignment="left"
+                        description="Our exquisite bathroom fittings collection available in an array of captivating colors, including rose gold, chrome, and matte black, our fittings elevate your bathroom aesthetic to new heights. Experience the tranquility of our silent and eco-friendly commodes, while our selection of styles ensures there's a design to suit every taste."
                     />
                 </div>
             </div>
