@@ -9,13 +9,15 @@ import "swiper/css/pagination";
 
 // import images
 import logo from "../assets/hero/hero-logo.svg";
-import hero2 from "../assets/hero/hero-2.png";
-import slide1 from "../assets/hero/slider/1.jpg";
-import slide2 from "../assets/hero/slider/2.jpg";
-import slide3 from "../assets/hero/slider/3.jpg";
-import slide4 from "../assets/hero/slider/4.jpg";
-import slide5 from "../assets/hero/slider/5.jpg";
-import slide6 from "../assets/hero/slider/6.jpg";
+import hero2 from "../assets/hero/hero-2.webp";
+import slide1 from "../assets/hero/slider/1.webp";
+import slide2 from "../assets/hero/slider/2.webp";
+import slide3 from "../assets/hero/slider/3.webp";
+import slide4 from "../assets/hero/slider/4.webp";
+import slide5 from "../assets/hero/slider/5.webp";
+import slide6 from "../assets/hero/slider/6.webp";
+import slide7 from "../assets/hero/slider/7.webp";
+import slide8 from "../assets/hero/slider/8.webp";
 
 const Hero = () => {
     return (
@@ -74,6 +76,20 @@ const Hero = () => {
                         <img
                             src={slide6}
                             alt="Home Interior Glazeline-6"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                            src={slide7}
+                            alt="Home Interior Glazeline-7"
+                            className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
+                        />
+                    </SwiperSlide>
+                       <SwiperSlide>
+                        <img
+                            src={slide8}
+                            alt="Home Interior Glazeline-8"
                             className="w-full h-[calc(50vh-34.5px)] object-cover object-bottom"
                         />
                     </SwiperSlide>
