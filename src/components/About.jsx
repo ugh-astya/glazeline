@@ -3,13 +3,13 @@ import Gallery from "./Gallery";
 import { DidMount } from "./CommonFunctions";
 
 // import images
-import top from "../assets/about-us/top.jpg";
-import abt1 from "../assets/about-us/pottery.jpg";
-import abt2 from "../assets/about-us/about_sophia.png";
-import abt3 from "../assets/about-us/handshake.png";
-import scene1 from "../assets/about-us/1.jpg";
-import scene2 from "../assets/about-us/2.jpg";
-import scene3 from "../assets/about-us/3.jpg";
+import top from "../assets/about-us/top.webp";
+import abt1 from "../assets/about-us/pottery.webp";
+import abt2 from "../assets/about-us/about_sophia.webp";
+import abt3 from "../assets/about-us/handshake.webp";
+import scene1 from "../assets/about-us/1.webp";
+import scene2 from "../assets/about-us/2.webp";
+import scene3 from "../assets/about-us/3.webp";
 
 const About = () => {
     return (
