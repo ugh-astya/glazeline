@@ -1,12 +1,12 @@
 import React from "react";
 
 // import images
-import partner1 from "../assets/partners/blackberry.png";
-import partner2 from "../assets/partners/creanza.png";
-import partner3 from "../assets/partners/essel.png";
-import partner4 from "../assets/partners/somany.png";
-import partner5 from "../assets/partners/tesa.png";
-import partner6 from "../assets/partners/welspun.png";
+import partner1 from "../assets/partners/blackberry.webp";
+import partner2 from "../assets/partners/creanza.webp";
+import partner3 from "../assets/partners/essel.webp";
+import partner4 from "../assets/partners/somany.webp";
+import partner5 from "../assets/partners/tesa.webp";
+import partner6 from "../assets/partners/welspun.webp";
 
 const Partners = () => {
     return (
