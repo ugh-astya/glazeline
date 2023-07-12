@@ -7,8 +7,6 @@ const Contact = ({ title, desc, tag }) => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-console.log(import.meta.env.VITE_service_id);
-        console.log(process.env.VITE_service_id);
         emailjs
             .sendForm(
                 import.meta.env.VITE_service_id,
